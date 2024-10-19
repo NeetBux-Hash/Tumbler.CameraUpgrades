@@ -6,11 +6,7 @@
 			"SubEntityOperation": [
 				"439efe8c5426bc93",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"In",
-						"cafe8930fdf7ad5a"
-					]
+					"AddEventConnection": ["OnFalse", "In", "cafe8930fdf7ad5a"]
 				}
 			]
 		},
@@ -18,11 +14,7 @@
 			"SubEntityOperation": [
 				"439efe8c5426bc93",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"In",
-						"cafec354950bf14b"
-					]
+					"AddEventConnection": ["OnFalse", "In", "cafec354950bf14b"]
 				}
 			]
 		},
@@ -30,11 +22,7 @@
 			"SubEntityOperation": [
 				"439efe8c5426bc93",
 				{
-					"AddEventConnection": [
-						"OnTrue",
-						"In",
-						"cafe3c92d2d02792"
-					]
+					"AddEventConnection": ["OnTrue", "In", "cafe3c92d2d02792"]
 				}
 			]
 		},

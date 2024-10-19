@@ -1,238 +1,160 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.3.3",
+	"version": "0.2.0",
 	"id": "Tumbler.CameraUpgrades",
 	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
-	"authors": [
-		"Tumbler",
-		"Atampy26",
-		"invalid",
-		"Notex"
-	],
-	"loadAfter": ["anthonyfuller.selfiemode","Atampy26.EnhancedCameraZoom"],
-	"frameworkVersion": "2.22.1",
+	"authors": ["Tumbler", "Atampy26", "invalid", "Notex"],
+	"loadAfter": ["anthonyfuller.selfiemode", "Atampy26.EnhancedCameraZoom"],
+	"frameworkVersion": "2.33.20",
 	"contentFolders": [],
 	"options": [
-
 		{
-			
 			"name": "I agree!",
 			"tooltip": "Options in each 'group' can be either for the regular camera or the suspect camera. So read carefully too before you select an option and check the description for possible issues when picking one. Checking this box does nothing but confirm you've fully read what's been written here",
 			"type": "checkbox",
 			"enabledByDefault": false
 		},
-
 		{
-			
 			"name": "I failed to understand",
 			"tooltip": "Uninstall the mod and re-install the mod. After that don't touch any options unless you know what they do. Checking this box does nothing but confirm you've fully read what's been written here",
 			"image": "content/pics/deathanim.gif",
 			"type": "checkbox",
 			"enabledByDefault": false
 		},
-		
-
-
 		{
 			"name": "Fix - Stay low!",
 			"tooltip": "Stops 47 from standing up everytime you want to take a picture with the suspect camera and gives you the ability to crouch and stand up as well. Note: Crouch button is the same as prime tag button so you might want to enable the 'Switch Prime set button' option in combination",
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "content/pics/staylow.gif",
-			"contentFolders": [
-				"content/Fix/staylow"
-			]
+			"contentFolders": ["content/Fix/staylow"]
 		},
-
 		{
 			"name": "Fix - Zoom slider on top",
 			"tooltip": "Swaps the positions of the selfie mode button and zoom camera slider for the normal camera in the photomodemenu. Requires Selfie Mode Mod by Anthony Fuller",
 			"type": "checkbox",
 			"requirements": ["anthonyfuller.selfiemode"],
 			"contentFolders": ["content/Fix/zoomontop"]
-			
-
 		},
-
-		
 		{
 			"name": "Functions - Instinct in Normal Camera",
 			"tooltip": "Gives instinct in normal Camera like the Suspect Camera does",
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "content/pics/instinctnormalcamera.gif",
-			"contentFolders": [
-				"content/Functions/normalcaminstinct"
-			]
+			"contentFolders": ["content/Functions/normalcaminstinct"]
 		},
-
 		{
 			"name": "Functions - Disable Proximity based tagging",
 			"tooltip": "[Recommended] Completely removes the distance filter for suspect tagging so you can tag suspects from anywhere. Credits to Notex",
 			"type": "checkbox",
 			"image": "content/pics/distancetagging.gif",
 			"enabledByDefault": true,
-			"contentFolders": [
-				"content/Functions/spycamnoproxy"
-			]
+			"contentFolders": ["content/Functions/spycamnoproxy"]
 		},
-
-			
 		{
 			"name": "Functions - Reset Zoom on Exit",
 			"tooltip": "Resets the zoom slider to 1x whenever exiting the normal camera. Basically made as an add-on for Atampy 26's Enhanced Camera Zoom mod because the normal camera lacks this function by default.",
 			"type": "checkbox",
 			"image": "content/pics/zoomreset.gif",
 			"enabledByDefault": true,
-			"contentFolders": [
-				"content/Functions/Resetonexit"
-			]
+			"contentFolders": ["content/Functions/Resetonexit"]
 		},
-
 		{
 			"name": "Functions - Disable Suspect Reset Zoom",
 			"tooltip": "[Not Recommended] Retains and keeps your zoom amount when exiting and entering aiming mode with the suspect camera.",
 			"type": "checkbox",
 			"image": "content/pics/noresetzoom.gif",
 			"enabledByDefault": false,
-			"contentFolders": [
-				"content/Functions/Disablereset"
-			]
+			"contentFolders": ["content/Functions/Disablereset"]
 		},
-
-
-
-			{
+		{
 			"name": "Input - Scroll to Zoom",
 			"tooltip": "Enables the use of the mouse scroll to zoom. For mouse and keyboard players. Current solution swaps the up/down and left/right controls for the camera controls. Z/W and X will be used for navigating up and down the photomenu depending on your keyboard layout (Azert/Qwerty/Chinese/....).",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/fastscrolltozoom.gif",
-			"contentFolders": [
-				"content/Inputs/scrolltozoom"
-			]
+			"contentFolders": ["content/Inputs/scrolltozoom"]
 		},
-
-
-
 		{
 			"name": "Input - Switch Prime set button ",
 			"tooltip": "Switches the Prime set suspect button from crouch to melee so you can crouch without accidently tagging suspects as prime. The melee button is A or Q (the key left of your 'walk forward' key) by default depedning on your keyboard layout (Azert/Qwerty) ",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/from C to A or Q.png",
-			"contentFolders": [
-				"content/Inputs/PrimeSetA"
-			]
+			"contentFolders": ["content/Inputs/PrimeSetA"]
 		},
-
 		{
 			"name": "Input - Muscle Memory ",
 			"tooltip": "Will make the toggle viewfinder button for the normal camera the same as the suspect camera which is E.",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/From A to E.png",
-			"contentFolders": [
-				"content/Inputs/ToggleSetE"
-			]
+			"contentFolders": ["content/Inputs/ToggleSetE"]
 		},
-
-
 		{
 			"name": "Editing - Suspect camera filters",
 			"tooltip": "Gives you the filter options from the normal camera",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/Filterrgb.gif",
-			"contentFolders": [
-				"content/Editing/spyfilters"
-			]
+			"contentFolders": ["content/Editing/spyfilters"]
 		},
-
 		{
 			"name": "Editing - Suspect camera DOF",
 			"tooltip": "Gives you the Depth of Field slider from the normal camera",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/DOFsingleshowcase.gif",
-			"contentFolders": [
-				"content/Editing/spyfuzzy"
-			]
+			"contentFolders": ["content/Editing/spyfuzzy"]
 		},
-
-				{
+		{
 			"name": "Editing - Remove normal camera filters",
 			"tooltip": "Removes the filter options from the normal camera",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": [
-				"content/Editing/RemoveFilters"
-			]
+			"contentFolders": ["content/Editing/RemoveFilters"]
 		},
-
 		{
 			"name": "Editing - Remove normal camera DOF",
 			"tooltip": "Removes the Depth of Field slider from the normal camera",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": [
-				"content/Editing/RemoveDOF"
-			]
+			"contentFolders": ["content/Editing/RemoveDOF"]
 		},
-
-
-
 		{
-		
 			"name": "UI - Disable cripple camera Hud",
 			"tooltip": "[Recommended] Disables the comically large USE CAMERA button when holding (not aiming) any camera. Credits to -invalid-",
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "content/pics/nocripplehud.gif",
-			"contentFolders": [
-				"content/UI/noUsecamerahud"
-			]
+			"contentFolders": ["content/UI/noUsecamerahud"]
 		},
-
-
-
 		{
-		
 			"name": "UI - Clutter off",
 			"tooltip": "Toggle the suspect's camera viewfinder off anytime",
 			"type": "checkbox",
 			"image": "content/pics/alwaystoggledisplay.gif",
 			"enabledByDefault": false,
-			"contentFolders": [
-				"content/UI/noviewfinder"
-			]
+			"contentFolders": ["content/UI/noviewfinder"]
 		},
-				{
-			
+		{
 			"name": "UI - Clear The Grid",
 			"tooltip": "Removes the gridlines from the spycam for better visibility",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/cleangrid.gif",
-			"contentFolders": [
-				"content/UI/clearcam"
-			]
+			"contentFolders": ["content/UI/clearcam"]
 		},
-
 		{
-		
 			"name": "UI - Self Cleaning UI",
 			"tooltip": "Dynamically removes functions you can't adjust in certain photomode scenarios like zoom or DOF. [Built in by default with any suspect camera editing options]",
 			"type": "checkbox",
 			"enabledByDefault": false,
-		"image": "content/pics/smartui.gif",
-			"contentFolders": [
-				"content/UI/cleanstatic"
-			]
+			"image": "content/pics/smartui.gif",
+			"contentFolders": ["content/UI/cleanstatic"]
 		},
-
-		
 		{
 			"group": "Suspect Camera Zoom",
 			"name": "Doesn't touch any zoom options",
@@ -248,9 +170,7 @@
 			"image": "content/pics/AftersimpleIncrementfix.gif",
 			"enabledByDefault": false,
 			"type": "select",
-			"contentFolders": [
-				"content/spycamzoomslide/spycamIncrement"
-			]
+			"contentFolders": ["content/spycamzoomslide/spycamIncrement"]
 		},
 		{
 			"group": "Suspect Camera Zoom",
@@ -259,9 +179,7 @@
 			"enabledByDefault": true,
 			"image": "content/pics/distancetagging.gif",
 			"type": "select",
-			"contentFolders": [
-				"content/spycamzoomslide/Spycamzoom"
-			]
+			"contentFolders": ["content/spycamzoomslide/Spycamzoom"]
 		},
 		{
 			"group": "Suspect Camera Zoom",
@@ -269,10 +187,8 @@
 			"tooltip": "[Kind of broken] Gives suspect camera 10x zoom but in increments of 2. This means 2x, 4x, 6x etc.",
 			"enabledByDefault": false,
 			"type": "select",
-			"contentFolders": [
-				"content/spycamzoomslide/spycamzoomIncrement2"
-			]
+			"contentFolders": ["content/spycamzoomslide/spycamzoomIncrement2"]
 		}
-
-	]
+	],
+	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/updates.json"
 }

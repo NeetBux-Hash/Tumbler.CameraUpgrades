@@ -10,10 +10,7 @@
 						"m_aMenuEntries",
 						[
 							{
-								"AddItemAfter": [
-									"17f588790d7aa131",
-									"cafe93097b420675"
-								]
+								"AddItemAfter": ["17f588790d7aa131", "cafe93097b420675"]
 							}
 						]
 					]
@@ -24,11 +21,7 @@
 			"SubEntityOperation": [
 				"b3f5ffe7592ceae5",
 				{
-					"AddEventConnection": [
-						"OnValue",
-						"SetVisible",
-						"910f6ca6f3c53134"
-					]
+					"AddEventConnection": ["OnValue", "SetVisible", "910f6ca6f3c53134"]
 				}
 			]
 		},
@@ -52,12 +45,7 @@
 						"m_bIsVisible": { "type": "bool", "value": true },
 						"m_aListOptions": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafecdb8dd0c5bad",
-								"cafe31b1386028f7",
-								"cafef26d6fbbb21a",
-								"cafe2a756a982142"
-							],
+							"value": ["cafecdb8dd0c5bad", "cafe31b1386028f7", "cafef26d6fbbb21a", "cafe2a756a982142"],
 							"postInit": true
 						}
 					},

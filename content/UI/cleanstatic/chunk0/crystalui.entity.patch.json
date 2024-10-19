@@ -13,10 +13,7 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"d2201b3589ed2f37",
-								"1ca1ec24a2f98757"
-							],
+							"value": ["d2201b3589ed2f37", "1ca1ec24a2f98757"],
 							"postInit": true
 						}
 					},
@@ -43,10 +40,7 @@
 					},
 					"events": {
 						"OnValue": {
-							"SetVisible": [
-								"22a48c959c9d7a36",
-								"4517e57dd0d01730"
-							]
+							"SetVisible": ["22a48c959c9d7a36", "4517e57dd0d01730"]
 						}
 					}
 				}

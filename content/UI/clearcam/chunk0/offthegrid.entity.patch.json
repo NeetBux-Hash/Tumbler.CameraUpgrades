@@ -7,11 +7,7 @@
 			"SubEntityOperation": [
 				"7f41ba7fa959a51f",
 				{
-					"RemoveEventConnection": [
-						"ViewFinderStyle",
-						"setViewFinderStyle",
-						"cddafeae2e649181"
-					]
+					"RemoveEventConnection": ["ViewFinderStyle", "setViewFinderStyle", "cddafeae2e649181"]
 				}
 			]
 		},
@@ -19,10 +15,7 @@
 			"SubEntityOperation": [
 				"85958c3de3d42914",
 				{
-					"PatchArrayPropertyValue": [
-						"m_aChildren",
-						[{ "RemoveItemByValue": "cddafeae2e649181" }]
-					]
+					"PatchArrayPropertyValue": ["m_aChildren", [{ "RemoveItemByValue": "cddafeae2e649181" }]]
 				}
 			]
 		}

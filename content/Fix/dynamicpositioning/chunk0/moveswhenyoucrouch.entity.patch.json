@@ -10,10 +10,7 @@
 						"m_aValues",
 						[
 							{
-								"AddItemAfter": [
-									"bc7b784ab0f31969",
-									"07b907efdc73a1a0"
-								]
+								"AddItemAfter": ["bc7b784ab0f31969", "07b907efdc73a1a0"]
 							}
 						]
 					]

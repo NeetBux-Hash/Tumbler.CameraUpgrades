@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"c03cb59c93ec4fec",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"SetFalse"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "SetFalse"]
 				}
 			]
 		},

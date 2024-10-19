@@ -11,16 +11,10 @@
 						[
 							{ "RemoveItemByValue": "22a48c959c9d7a36" },
 							{
-								"AddItemBefore": [
-									"93c7f42ace04362f",
-									"cafed7c5907761c1"
-								]
+								"AddItemBefore": ["93c7f42ace04362f", "cafed7c5907761c1"]
 							},
 							{
-								"AddItemAfter": [
-									"93c7f42ace04362f",
-									"22a48c959c9d7a36"
-								]
+								"AddItemAfter": ["93c7f42ace04362f", "22a48c959c9d7a36"]
 							}
 						]
 					]

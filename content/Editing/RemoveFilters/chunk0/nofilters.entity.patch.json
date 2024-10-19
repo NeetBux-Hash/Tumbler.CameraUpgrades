@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"a7484674383510cb",
 				{
-					"PatchArrayPropertyValue": [
-						"m_aMenuEntries",
-						[{ "RemoveItemByValue": "e80f2e6a4bbbae40" }]
-					]
+					"PatchArrayPropertyValue": ["m_aMenuEntries", [{ "RemoveItemByValue": "e80f2e6a4bbbae40" }]]
 				}
 			]
 		}

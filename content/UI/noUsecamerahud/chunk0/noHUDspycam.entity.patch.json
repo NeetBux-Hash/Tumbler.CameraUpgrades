@@ -3,10 +3,7 @@
 	"tbluHash": "006A955B210AE2B1",
 	"patch": [
 		{
-			"SubEntityOperation": [
-				"068111f219fa0f61",
-				{ "RemovePropertyByName": "m_rPromptTextResource" }
-			]
+			"SubEntityOperation": ["068111f219fa0f61", { "RemovePropertyByName": "m_rPromptTextResource" }]
 		},
 		{
 			"SubEntityOperation": [
