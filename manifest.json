@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.3.3",
 	"id": "Tumbler.CameraUpgrades",
-	"name": "Camera Overhaul Github Testing",
+	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
 	"authors": [
 		"Tumbler",
