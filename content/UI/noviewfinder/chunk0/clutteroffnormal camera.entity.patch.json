@@ -1,0 +1,34 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafef0fe4df647fd",
+				{
+					"parent": "09769fcd681bc974",
+					"name": "is2hide",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"73b158bfeb088b20",
+								"9911dbb4e1aa527d"
+							],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnValue": {
+							"SetVisible": ["e8ad90277a2c3268"],
+							"In": ["180e41b36936ef93"]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -118,7 +118,7 @@
 		},
 		{
 			"name": "UI - Clutter off",
-			"tooltip": "Toggle the suspect's camera viewfinder off anytime",
+			"tooltip": "Toggle the UI menu for either camera off anytime",
 			"type": "checkbox",
 			"image": "content/pics/alwaystoggledisplay.gif",
 			"enabledByDefault": false,
