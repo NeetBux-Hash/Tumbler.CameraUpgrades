@@ -1,0 +1,280 @@
+{
+	"tempHash": "009C268301A2A812",
+	"tbluHash": "006A955B210AE2B1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aMenuEntries",
+						[
+							{
+								"AddItemAfter": [
+									"17f588790d7aa131",
+									"cafeb23d79719e81"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb23d79719e81",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "DOF Slider",
+					"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentryslideraspect.class].entitytype).pc_entitytype",
+					"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentryslideraspect.class].entitytype).pc_entityblueprint",
+					"properties": {
+						"m_fStep": { "type": "float32", "value": 20.0 },
+						"m_sValueFormat": {
+							"type": "ZString",
+							"value": "{0,.0f} %"
+						},
+						"m_fMaximum": {
+							"type": "float32",
+							"value": 100.0
+						},
+						"m_fValue": { "type": "float32", "value": 0.0 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud_camera.sweetmenutext?/ui_hud_camera_menu_dof.sweetline].pc_sweetline",
+								"flag": "5F"
+							}
+						},
+						"m_bIsEnabled": { "type": "bool", "value": false },
+						"m_bIsVisible": { "type": "bool", "value": true },
+						"m_aValueTextEntities": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["cafee60c2bfed4aa"],
+							"postInit": true
+						}
+					},
+					"platformSpecificProperties": {
+						"VR_PC": {
+							"m_bIsVisible": {
+								"type": "bool",
+								"value": false
+							}
+						},
+						"VR_PS4": {
+							"m_bIsVisible": {
+								"type": "bool",
+								"value": false
+							}
+						}
+					},
+					"events": {
+						"ValueChanged": {
+							"Input": ["cafeb4875bdb8d8e"],
+							"Send_DOF": ["76deb3b3d46b4b1d"],
+							"SetValue2": ["831c580b6afcb17a"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee60c2bfed4aa",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "Zero means OFF",
+					"factory": "[modules:/zphotomodemenuentryslidervaluetextentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentryslidervaluetextentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sSweetDisplayText": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "004BB96048F6DD61",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb4875bdb8d8e",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "DOF smooth",
+					"factory": "[modules:/zsmoothoperator.class].pc_entitytype",
+					"blueprint": "[modules:/zsmoothoperator.class].pc_entityblueprint",
+					"properties": {
+						"m_fTransitionTime": {
+							"type": "float32",
+							"value": 0.125
+						}
+					},
+					"events": {
+						"Output": { "Input": ["cafe77588c4165d4"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe77588c4165d4",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "DOF CurveEvaluator",
+					"factory": "[modules:/zcurveevaluator.class].pc_entitytype",
+					"blueprint": "[modules:/zcurveevaluator.class].pc_entityblueprint",
+					"properties": {
+						"m_Curve": {
+							"type": "ZCurve",
+							"value": {
+								"data": [
+									[
+										0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+										0.0
+									],
+									[
+										0.05000000074505806, 1000.0, 0.0,
+										0.0, -286.8061218261719,
+										1024.99462890625,
+										-1531.2357177734375, 1000.0
+									],
+									[
+										16.524999618530273,
+										206.9527587890625, 0.0, 0.0,
+										-63.99509811401367,
+										228.70721435546875,
+										-341.6648864746094,
+										206.9527587890625
+									],
+									[
+										33.0, 30.0, 0.0, 0.0, 0.0, 0.0,
+										-26.0, 30.0
+									],
+									[
+										67.0, 4.0, 0.0, 0.0, 0.0, 0.0,
+										-3.799999952316284, 4.0
+									],
+									[
+										100.0, 0.20000000298023224, 0.0,
+										0.0, 0.0, 0.0, 0.0,
+										0.20000000298023224
+									]
+								]
+							}
+						}
+					},
+					"events": {
+						"Output": { "TransmitEvent": ["cafea83a24165a22"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea83a24165a22",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "EventChannel Transmitter Float 32_Dof",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_float32.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_float32.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe280d1d63e13a"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe280d1d63e13a",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "DOFIntensityToggle",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "DOFIntensityToggle"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb5a138ed2a8e",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "Enable DOF",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["e708fa60cacc24a3"]
+						}
+					},
+					"events": {
+						"OnValue": { "SetVisible": ["cafeb23d79719e81"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebe5d6090a5ba",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "VBO_EnableDof",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"e708fa60cacc24a3",
+								"3dc8aaa3b65e2fe9",
+								"868c564c06658be1"
+							]
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": false
+						}
+					},
+					"events": {
+						"OnValue": { "SetEnabled": ["cafeb23d79719e81"] }
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "0942f293368e55e7",
+				"name": "Notes",
+				"text": ""
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe15a2f192c893",
+				"name": "Notes",
+				"text": "Extra check for cleaner ui. Removes like the zoom slider in static. Will delete if can edit dof in edit mode"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafeb23d79719e81",
+				"name": "Notes",
+				"text": "For dof in static, for now: add an int event same as filters here\nWas false enabled and true visible. Enable bool values overrides no matter false or true"
+			}
+		}
+	],
+	"patchVersion": 6
+}

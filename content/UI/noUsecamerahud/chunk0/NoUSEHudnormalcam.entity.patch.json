@@ -1,0 +1,43 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"66fe9706ae3522e7",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rVisibleCondition",
+						"value": "cafe6426af9ded4c"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"66fe9706ae3522e7",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rUsableCondition",
+						"value": "cafe6426af9ded4c"
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6426af9ded4c",
+				{
+					"parent": "66fe9706ae3522e7",
+					"name": "invalid's ValueBool_Poll",
+					"factory": "[modules:/zvalueboolbasic.class].pc_entitytype",
+					"blueprint": "[modules:/zvalueboolbasic.class].pc_entityblueprint",
+					"properties": {
+						"m_bVisible": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

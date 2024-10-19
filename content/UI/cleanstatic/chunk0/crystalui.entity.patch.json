@@ -1,0 +1,68 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe8200a2d91da4",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Enable Visibility",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"d2201b3589ed2f37",
+								"1ca1ec24a2f98757"
+							],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnValue": { "SetVisible": ["93c7f42ace04362f"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed93cd82e39c1",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Enable Selfie",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["d2201b3589ed2f37"],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnValue": {
+							"SetVisible": [
+								"22a48c959c9d7a36",
+								"4517e57dd0d01730"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7fd31a649d20",
+				{
+					"parent": "4c0d94fe0d38c473",
+					"name": "Enable DOF",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,230 @@
+{
+	"tempHash": "009C268301A2A812",
+	"tbluHash": "006A955B210AE2B1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aMenuEntries",
+						[
+							{
+								"AddItemAfter": [
+									"17f588790d7aa131",
+									"cafe93097b420675"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b3f5ffe7592ceae5",
+				{
+					"AddEventConnection": [
+						"OnValue",
+						"SetVisible",
+						"910f6ca6f3c53134"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe93097b420675",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "Filter List",
+					"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentrylistaspect.class].entitytype).pc_entitytype",
+					"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentrylistaspect.class].entitytype).pc_entityblueprint",
+					"properties": {
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud_camera.sweetmenutext?/ui_hud_camera_menu_filter.sweetline].pc_sweetline",
+								"flag": "5F"
+							}
+						},
+						"m_bIsEnabled": { "type": "bool", "value": true },
+						"m_bIsVisible": { "type": "bool", "value": true },
+						"m_aListOptions": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafecdb8dd0c5bad",
+								"cafe31b1386028f7",
+								"cafef26d6fbbb21a",
+								"cafe2a756a982142"
+							],
+							"postInit": true
+						}
+					},
+					"platformSpecificProperties": {
+						"VR_PC": {
+							"m_bIsVisible": {
+								"type": "bool",
+								"value": false
+							}
+						}
+					},
+					"events": {
+						"SelectionChanged": {
+							"TransmitEvent": ["cafe1933342aca62"],
+							"Send_Switch_Filter": ["76deb3b3d46b4b1d"],
+							"SetValue": ["831c580b6afcb17a"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecdb8dd0c5bad",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "FilterOption_0",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 0 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "004BB96048F6DD61",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe31b1386028f7",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "FilterOption_1",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 1 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00E1842DE3BE4ACE",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef26d6fbbb21a",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "FilterOption_2",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 2 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00A56CDC62F40438",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2a756a982142",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "FilterOption_3",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 3 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00B887D1EE3A7944",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1933342aca62",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "EventChannelTransmitter_int32",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_int32.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_int32.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafef8c1f3deffcc"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef8c1f3deffcc",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "PhotoModeFilter",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "PhotoModeFilter"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "cafe7d6cb8131426",
+				"name": "Notes",
+				"text": "This one likely says when the filter list options is disabled"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe9a0ad57a577e",
+				"name": "Notes",
+				"text": "This isnt necesarry for aesthetics since its always functional tf"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe6157b685a2cb",
+				"name": "Notes",
+				"text": "Should hide filters list like zoom and dof"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafedac5094d8444",
+				"name": "Notes",
+				"text": "For edit mode option, we delete this and add back there. Add an enable bool with visibility like zoom enable bool too then. Can use temp empty entity as placeholders and copy paste values from existing temp edits in glacier straight to raw json"
+			}
+		}
+	],
+	"patchVersion": 6
+}
