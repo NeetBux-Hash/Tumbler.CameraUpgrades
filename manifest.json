@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"id": "Tumbler.CameraUpgrades",
 	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
@@ -78,7 +78,6 @@
 			"image": "content/pics/fastscrolltozoom.gif",
 			"contentFolders": ["content/Inputs/scrolltozoom"]
 		},
-		
 		{
 			"name": "Editing - Suspect camera filters",
 			"tooltip": "Gives you the filter options from the normal camera",
@@ -145,17 +144,15 @@
 			"name": "About Input options",
 			"type": "checkbox",
 			"tooltip": "Pick the same Input type from each group to prevent double inputs for the same functions. It's recommended but not necessary to enable both groups. Checking this box does nothing but confirm you've fully read what's been written here "
-
-			
-	},
-	{
-		"group": "Switch Prime set button",
-		"name": "Offㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ",
-		"tooltip": "Keeps the default button the game has set which is crouch, default as 'C' ",
-		"type": "select",
-		"enabledByDefault": true,
-		"contentFolders": []
-	},
+		},
+		{
+			"group": "Switch Prime set button",
+			"name": "Offㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ",
+			"tooltip": "Keeps the default button the game has set which is crouch, default as 'C' ",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": []
+		},
 		{
 			"group": "Switch Prime set button",
 			"name": "Input type 1 - Switch to A/Q button ",
@@ -182,8 +179,6 @@
 			"enabledByDefault": true,
 			"contentFolders": []
 		},
-
-
 		{
 			"group": "Toggle Viewfinder/ Hide Menu button",
 			"name": "Input type 1 - normal camera to 'E' ",
