@@ -13,10 +13,7 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"73b158bfeb088b20",
-								"9911dbb4e1aa527d"
-							],
+							"value": ["73b158bfeb088b20", "9911dbb4e1aa527d"],
 							"postInit": true
 						}
 					},
