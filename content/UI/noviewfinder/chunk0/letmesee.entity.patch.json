@@ -1,0 +1,89 @@
+{
+	"tempHash": "009C268301A2A812",
+	"tbluHash": "006A955B210AE2B1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"c03cb59c93ec4fec",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"SetFalse"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"dc3e8d8f1088d89a",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rValueEntity",
+						"value": "c03cb59c93ec4fec"
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0cf75906ddd6",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "ValueBool_Proxy2",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "26591a19b648aebd",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnValue": {
+							"SetVisible": ["7151419006bcd9f9"],
+							"SetEnabled": ["7151419006bcd9f9"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef0752999c146",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "Viewfinderwasturnedoff",
+					"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bSetValueAlwaysTriggerChangedEvent": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": { "OnValue": { "In": ["bbaabf2fbcf20144"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb235cca1cc4f",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "Viewfinderwasturnedon",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "c03cb59c93ec4fec",
+				"name": "Notes",
+				"text": "change in Ontrue to checkviewfinder and refer to my event channel yet to make that holds my valuebool i need to edit or make idk what order, will see tomorrow"
+			}
+		}
+	],
+	"patchVersion": 6
+}

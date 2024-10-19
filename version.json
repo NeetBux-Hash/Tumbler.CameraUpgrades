@@ -1,0 +1,5 @@
+{
+    "version": "0.1.0", 
+    "changelog": "Adds instinct for normal camera \n- Adds options to disable Use Camera button when holding either normal or suspect camera \n- Adds incremental zoom for the suspect camera \n- Adds 10x zoom for the suspect camera \n- Adds 10x zoom for the suspect camera but with a 2x increment variant to prevent having to overuse the bad camera controls",
+    "url" : "" 
+}

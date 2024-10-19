@@ -1,0 +1,156 @@
+- Priority!!! - Enable auto update w/ github template. No upload before this is done
+- Change mod title to Upgrades on nexus across the board. Same as manifest ID and name
+- Add explanation as to why everything is a selection for possible disabling them in case of bugs until fix. Ask people to use bug report button too instead of comments.
+- Add images with options with blobs
+
+----------Fixes-----------
+
+- Fix 2x on 10x skipping 2x at zoom in; Feed gpt full json and ask for m_fstep analyze
+
+- Fix flash on static pictures?
+0072BC2B790950B2.TEMP
+[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entitytype
+00102EA3A46F6E24.TEMP
+[assembly:/_pro/design/items/prop_gadgets_runtimes.template?/prop_gadget_camera_runtime.entitytemplate].pc_entitytemplate
+0040AAE0C098FD41.TEMP
+camera_intel_object
+00DBD52219AE2726.TEMP
+camera_scan_intel_object
+001B1430D1673821.TEMP
+[assembly:/_pro/design/gamecore/setpiecehelpers_s3.template?/photohelper_actorvisibleonphoto.entitytemplate].pc_entitytype
+009C268301A2A812.TEMP
+[assembly:/_pro/design/items/prop_evergreen_runtimes.template?/prop_gadget_evergreen_spycam_runtime.entitytemplate].pc_entitytemplate
+
+- Refine distance tagging from distance by highlighting actors in crosshairs. TOO ADVANCED for me atm
+
+
+
+- Double check possible overwrite in entity patches to avoid collisions
+Solution; wait for bug reports. So far so good
+
+- Fix cant set to non target from prime. Note; can set to prime sraight from non targeet suspect
+Solution; always can set to non susppect OR can only set to non suspect from not prime. "Two way Tag" or "One way tag"
+One way tagging might be better and help with the broken raycasting tagging multiple suspects. Example prime meeting with non suspect
+. Answer to this is advanced highlighting "glow" for later
+
+- Add ability to fully look up and down
+
+----------------Functions----------
+
+A flash that can be toggled on/off any time
+
+
+--------Inputs--------------
+
+- Inventory button has no gameinput for some reason but a token
+Solution: see if tokens can be called for inputs or something starting at
+[assembly:/_pro/design/gamecore/events/eventtokens_hudcontrol.template?/eventtoken_hud_inventory_open.entitytemplate].pc_entitytype
+Hash
+0032A62BC349E6BA [Cant make enums]
+
+-Different solution is to override preventing to set multiple custom keybinds for camera switch and inventory or prevent it altogether
+SEE menusystem/elements/settings/mousekeyboard
+-----------The Crouching issue-------------------
+
+- For above and for later, See if camera position can match 47 head position
+Solution; Check mtransform values in hero positions
+Interestingly, the selfie cam does have the ability to move with different stance positions. Def investigate
+
+- Add in real crouching when in camera crouch position, so no getting spotted when in aim mode. 
+
+- Saw this line {
+			"nPropertyID": "m_eAnimationCategory",
+			"value": {
+				"$type": "EWeaponAnimationCategory",
+				"$val": "eWAC_Rifle"
+			}
+
+inside [modules:/zhm5itemweapon.class].pc_entitytype
+Could look for enums in library 
+
+
+-----------Editing-----------------
+
+- Make more camera filters
+See 
+[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entitytype
+for a lead
+All search results for "Amora" filter in chunk0;
+009BC657F1BDA568.LINE
+No path
+00EACC06D7A486ED.LOCR
+evergreen_campaign_leadernames
+00AAD0F7BF22DE8E.TEMP
+fx_pf_postfiltercontroller_greedy
+005E7220E6E7A621.TEMP
+fx_pf_postfiltercontroller_sniper
+00E1842DE3BE4ACE.LINE
+No path
+0072BC2B790950B2.TEMP
+[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entitytype
+00EC9DAF86F69629.LOCR
+[assembly:/localization/hitman6/conversations/ui/pro/hud_camera.sweetmenutext].pc_localized-textlist
+
+
+- add an option to always take a picture in suspect. Can not collide with setting tags functions
+
+- See if DOF editing can be done in freezemode and why it cant atm
+Lead; Unlike the dof, the filters have a set value int inside entity 0072BC2B790950B2 which can hold values.
+Try doing the same for DOF. Also see template 00D566C89F9F1886 for post filter logic.
+Dof uses float values same as zoom. Might explain their lack of freeze editing. 
+Solution: Pinpoint. 
+Rule is that editing should be its own json option for editing. 
+Result; DOF cant edit in static
+Solution Hold and add back both enable and vbo
+
+- Could do same for zoom freeze editing. Call it "enhance"
+
+- Interestingly, the aim profiles for crouching with spycam have modifiers, one includes selfie stick. Could be used
+
+
+----------Bonus section------------
+
+Paparazzi 47: This should be used to replace the phone texture with one of the photographers models 
+A lethal flash toggle ideas
+Make flash blind people in range
+Blind fire camera to quick flash only, no picture mode
+use Flash while vaulting using blind fire
+Take picture from cover with blindfire 
+Take picture when mid switching covers
+Go pro module that can be equipped or dequipped and "shows use camera" button (see entity and module creation). Can zoom in and out when picture already taken (see ear piece mod for adding inventory thing) :ADVANCED
+- Got to pick option 1 with a possible option 2; see blindfire and snapfire, also investigate flash entity
+- Downloaded sound for on/off toggle. Check possible laws 
+
+- enable running man, also in cripple aim entity
+Testing: Fastwalk and running enabled atm. Probably disable the former for immersion and only running
+Result; cant fast walk or run in either.
+Solution; Hold for now. Then Go deeper 
+
+- For above, might need to make a "gimbal" select option to disable head tracking when running
+
+-Add the ability to always edit picture not only in not freeze. Add another proxy maybe
+and see how the zoomslider gets disabled when in freezemode
+Noted: Deleting the vbo entity entirely did it for filters.
+
+
+- Sticky cam that can attract and explode
+
+- Npcs say something nice instead of yelling like your holding a gun. Might even use pose animation ractions
+
+
+
+--------Selfie section--------
+
+- A toggle button like hide viewfinder for selfie mode using SKEH or not. See how viewfinder got its E button
+Lets use Shift or spacebar since cant change in static mode and convert from menu entry toggle to viewfinder like sweetmenu 
+
+
+- Similiarly The selfie cam should get the cancel input which is likely spacebar
+Used f for now but isnt doing anything and empty sweetline as expected
+
+-Raycasting in selfie mode.
+adding rays event lines worked but need to look opposite way. Also see if ray works straight when selfie enabled.
+Need to invert something. Add an inverted entity bool maybe or copy enire entity list from ray map and convert into selfiecam, as last resort or adding only top entity duplicates
+Should make intel from safes work too. Intel use raycasting?
+
+- Zoom option idea to add a selfiestick to the selfie cam. Should be compatible with og selfie mod; ADVANCED

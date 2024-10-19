@@ -1,0 +1,2 @@
+Keep everything contained in here not to come to main. Add a gitignire rule in release 
+Branch work emulation 

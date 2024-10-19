@@ -1,0 +1,43 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"a7484674383510cb",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aMenuEntries",
+						[
+							{ "RemoveItemByValue": "22a48c959c9d7a36" },
+							{
+								"AddItemBefore": [
+									"93c7f42ace04362f",
+									"cafed7c5907761c1"
+								]
+							},
+							{
+								"AddItemAfter": [
+									"93c7f42ace04362f",
+									"22a48c959c9d7a36"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed7c5907761c1",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "something",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

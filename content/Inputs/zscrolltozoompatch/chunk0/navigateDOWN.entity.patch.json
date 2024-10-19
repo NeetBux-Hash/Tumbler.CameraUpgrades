@@ -1,0 +1,25 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"a7484674383510cb",
+				{
+					"AddProperty": [
+						"m_eInputNavigateDown",
+						{ "type": "EHM5GameInputFlag", "value": "" }
+					]
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "ca1bf3d9a532f5b1",
+				"name": "Notes",
+				"text": "input for side mouse on for up down menu navigation"
+			}
+		}
+	],
+	"patchVersion": 6
+}

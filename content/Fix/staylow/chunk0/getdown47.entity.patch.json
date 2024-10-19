@@ -1,0 +1,354 @@
+{
+	"tempHash": "009C268301A2A812",
+	"tbluHash": "006A955B210AE2B1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"da2c33f93482af71",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_bSneak",
+						"value": true
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"da2c33f93482af71",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_bStandUp",
+						"value": true
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeadeea867babc",
+				{
+					"parent": "0942f293368e55e7",
+					"name": "AimProfiles",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+					"inputCopying": {
+						"BlendIn": {
+							"BlendIn": [
+								"cafe225b4de5dfd4",
+								"cafe0557a515a986",
+								"cafe3360dc6a21bd",
+								"cafee5cc7bc90c20",
+								"cafe2ce8e3a6ed4d",
+								"cafe5a11a97ba2c5"
+							]
+						},
+						"BlendOut": {
+							"BlendOut": [
+								"cafe225b4de5dfd4",
+								"cafe0557a515a986",
+								"cafe3360dc6a21bd",
+								"cafee5cc7bc90c20",
+								"cafe2ce8e3a6ed4d",
+								"cafe5a11a97ba2c5"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2ce8e3a6ed4d",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "OTSLow",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamOTSLow"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.350000023841858
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3360dc6a21bd",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "OTSHigh",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamOTSHigh"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.7000000476837158
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": {
+							"type": "bool",
+							"value": false
+						},
+						"m_fFOV": { "type": "float32", "value": 40.0 }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0557a515a986",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "CoverHIGHOTS",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamCoverHighOTS"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.7000000476837158
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe225b4de5dfd4",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "CoverLOWOTS",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamCoverLowOTS"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.7000000476837158
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5a11a97ba2c5",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "Locomotion",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamLocomotion"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.7000000476837158
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee5cc7bc90c20",
+				{
+					"parent": "cafeadeea867babc",
+					"name": "LedgeWalkOTS",
+					"factory": "[modules:/zhm5gamecamprofileentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5gamecamprofileentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eCameraControls": {
+							"type": "ECameraControls",
+							"value": "eCameraControlsOTS"
+						},
+						"m_fPitchMaxOffset": {
+							"type": "float32",
+							"value": 50.0
+						},
+						"m_fPitchMinOffset": {
+							"type": "float32",
+							"value": -30.0
+						},
+						"m_eState": {
+							"type": "ECameraState",
+							"value": "eCamLedgeWalkOTS"
+						},
+						"m_fRadius": { "type": "float32", "value": 0.0 },
+						"m_fStickLength": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fHeight": {
+							"type": "float32",
+							"value": 1.7000000476837158
+						},
+						"m_fBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_fProfileBlendTime": {
+							"type": "float32",
+							"value": 0.0
+						},
+						"m_nPriority": { "type": "int32", "value": 1000 },
+						"m_bAimPushOut": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

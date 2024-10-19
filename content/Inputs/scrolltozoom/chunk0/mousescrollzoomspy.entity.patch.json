@@ -1,0 +1,63 @@
+{
+	"tempHash": "009C268301A2A812",
+	"tbluHash": "006A955B210AE2B1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"AddProperty": [
+						"m_eInputNavigateUp",
+						{
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputChangeAmmoPrevious"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"AddProperty": [
+						"m_eInputNavigateDown",
+						{
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputChangeAmmoNext"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"AddProperty": [
+						"m_eInputNavigateLeft",
+						{
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputWeaponZoomOut"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"910f6ca6f3c53134",
+				{
+					"AddProperty": [
+						"m_eInputNavigateRight",
+						{
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputWeaponZoomIn"
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

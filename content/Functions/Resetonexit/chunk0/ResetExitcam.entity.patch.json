@@ -1,0 +1,132 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"439efe8c5426bc93",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"In",
+						"cafe8930fdf7ad5a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"439efe8c5426bc93",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"In",
+						"cafec354950bf14b"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"439efe8c5426bc93",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"In",
+						"cafe3c92d2d02792"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8930fdf7ad5a",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "ResetZoomOnExit",
+					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out02": { "Poll": ["0dd23c2247f41e65"] },
+						"Out01": {
+							"SetValue": [
+								{
+									"ref": "93c7f42ace04362f",
+									"value": {
+										"type": "float32",
+										"value": 1.0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec354950bf14b",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "SignalFork_False",
+					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out01": { "FadeIn": ["9f8eea49f97b3657"] },
+						"Out02": { "TransmitFalse": ["cafec0adcaa6e255"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3c92d2d02792",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "SignalFork_True",
+					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out01": { "InstantOff": ["9f8eea49f97b3657"] },
+						"Out02": { "TransmitTrue": ["cafec0adcaa6e255"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec0adcaa6e255",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "EventChannelTransmitter_bool_01",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe71590643796f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe71590643796f",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "CamIgnoreWorldUIVisibility",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "PhotoModeViewFinder"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
