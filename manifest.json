@@ -11,7 +11,7 @@
 	"options": [
 		{
 			"name": "I agree!",
-			"tooltip": "Options in each 'group' can be either for the regular camera or the suspect camera. So read carefully too before you select an option and check the description for possible issues when picking one. Checking this box does nothing but confirm you've fully read what's been written here",
+			"tooltip": "Options in each 'group' can be either for the regular camera or the suspect camera. So read carefully too before you select an option and check the description for possible issues when picking one. Input options are based on DEFAULT KEYBINDS. Checking this box does nothing but confirm you've fully read what's been written here",
 			"type": "checkbox",
 			"enabledByDefault": false
 		},
@@ -32,8 +32,9 @@
 		},
 		{
 			"name": "Fix - Zoom slider on top",
-			"tooltip": "Swaps the positions of the selfie mode button and zoom camera slider for the normal camera in the photomodemenu. Requires Selfie Mode Mod by Anthony Fuller",
+			"tooltip": "Swaps the positions of the selfie mode button and zoom camera slider for the normal camera in the photomode menu. Requires Selfie Mode Mod by Anthony Fuller",
 			"type": "checkbox",
+			"image": "content/pics/zoomontop.gif",
 			"requirements": ["anthonyfuller.selfiemode"],
 			"contentFolders": ["content/Fix/zoomontop"]
 		},
@@ -71,28 +72,13 @@
 		},
 		{
 			"name": "Input - Scroll to Zoom",
-			"tooltip": "Enables the use of the mouse scroll to zoom. For mouse and keyboard players. Current solution swaps the up/down and left/right controls for the camera controls. Z/W and X will be used for navigating up and down the photomenu depending on your keyboard layout (Azert/Qwerty/Chinese/....).",
+			"tooltip": "Enables the use of the mouse scroll to zoom. For mouse and keyboard players. Current solution swaps the up/down and left/right controls for the camera controls. 'Z/W' and 'X' will be used for navigating up and down the photomenu depending on your keyboard layout and default keybinds (Azert/Qwerty/Chinese/....).",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"image": "content/pics/fastscrolltozoom.gif",
 			"contentFolders": ["content/Inputs/scrolltozoom"]
 		},
-		{
-			"name": "Input - Switch Prime set button ",
-			"tooltip": "Switches the Prime set suspect button from crouch to melee so you can crouch without accidently tagging suspects as prime. The melee button is A or Q (the key left of your 'walk forward' key) by default depedning on your keyboard layout (Azert/Qwerty) ",
-			"type": "checkbox",
-			"enabledByDefault": false,
-			"image": "content/pics/from C to A or Q.png",
-			"contentFolders": ["content/Inputs/PrimeSetA"]
-		},
-		{
-			"name": "Input - Muscle Memory ",
-			"tooltip": "Will make the toggle viewfinder button for the normal camera the same as the suspect camera which is E.",
-			"type": "checkbox",
-			"enabledByDefault": false,
-			"image": "content/pics/From A to E.png",
-			"contentFolders": ["content/Inputs/ToggleSetE"]
-		},
+		
 		{
 			"name": "Editing - Suspect camera filters",
 			"tooltip": "Gives you the filter options from the normal camera",
@@ -154,6 +140,67 @@
 			"enabledByDefault": false,
 			"image": "content/pics/smartui.gif",
 			"contentFolders": ["content/UI/cleanstatic"]
+		},
+		{
+			"name": "About Input options",
+			"type": "checkbox",
+			"tooltip": "Pick the same Input type from each group to prevent double inputs for the same functions. It's recommended but not necessary to enable both groups. Checking this box does nothing but confirm you've fully read what's been written here "
+
+			
+	},
+	{
+		"group": "Switch Prime set button",
+		"name": "Offㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ",
+		"tooltip": "Keeps the default button the game has set which is crouch, default as 'C' ",
+		"type": "select",
+		"enabledByDefault": true,
+		"contentFolders": []
+	},
+		{
+			"group": "Switch Prime set button",
+			"name": "Input type 1 - Switch to A/Q button ",
+			"tooltip": "Switches the Prime set suspect button from crouch to melee so you can crouch without accidently tagging suspects as prime. The melee button is A or Q (the key left of your 'walk forward' key) by default depending on your keyboard layout (Azert/Qwerty) ",
+			"type": "select",
+			"enabledByDefault": false,
+			"image": "content/pics/from C to A or Q.png",
+			"contentFolders": ["content/Inputs/PrimeSetA"]
+		},
+		{
+			"group": "Switch Prime set button",
+			"name": "Input type 2 - Switch to E button ",
+			"tooltip": "Switches the Prime set suspect button from crouch to 'use' button instead. The use button is by default 'E' (the key right of your 'walk forward' key) depending on your keyboard layout (Azert/Qwerty) ",
+			"type": "select",
+			"enabledByDefault": false,
+			"image": "content/pics/E to prime.png",
+			"contentFolders": ["content/Inputs/PrimeSetE"]
+		},
+		{
+			"group": "Toggle Viewfinder/ Hide Menu button",
+			"name": "Offㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ",
+			"tooltip": "Keeps the default buttons the game has set which are A for the normal camera and E for the suspect camera",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": []
+		},
+
+
+		{
+			"group": "Toggle Viewfinder/ Hide Menu button",
+			"name": "Input type 1 - normal camera to 'E' ",
+			"tooltip": "Will make the hide menu button for the normal camera the same as the suspect camera which is E.",
+			"type": "select",
+			"enabledByDefault": false,
+			"image": "content/pics/From A to E.png",
+			"contentFolders": ["content/Inputs/ToggleSetE"]
+		},
+		{
+			"group": "Toggle Viewfinder/ Hide Menu button",
+			"name": "Input type 2 - Suspect camera to 'A' ",
+			"tooltip": "Will make the toggle viewfinder button for the suspect camera the same as the normal camera which is A/Q instead.",
+			"type": "select",
+			"image": "content/pics/E to prime.png",
+			"enabledByDefault": false,
+			"contentFolders": ["content/Inputs/ToggleSetA"]
 		},
 		{
 			"group": "Suspect Camera Zoom",
