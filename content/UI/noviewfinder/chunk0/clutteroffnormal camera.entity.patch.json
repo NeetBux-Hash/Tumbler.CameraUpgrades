@@ -4,23 +4,23 @@
 	"patch": [
 		{
 			"AddEntity": [
-				"cafef0fe4df647fd",
+				"cafe805e5be7a38e",
 				{
-					"parent": "09769fcd681bc974",
-					"name": "is2hide",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "ValueBool_ProxyUI",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_proxy.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_aValues": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["73b158bfeb088b20", "9911dbb4e1aa527d"],
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "439efe8c5426bc93",
 							"postInit": true
 						}
 					},
 					"events": {
 						"OnValue": {
-							"SetVisible": ["e8ad90277a2c3268"],
-							"In": ["180e41b36936ef93"]
+							"SetVisible": ["1c17cc5b5e3f36fb"],
+							"SetEnabled": ["1c17cc5b5e3f36fb"]
 						}
 					}
 				}
