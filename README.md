@@ -6,4 +6,4 @@ An overhaul to both cameras by changing and deleting some properties. Default en
 
 ---
 
-`Tumbler.CameraUpgrades` v0.4.1, by Tumbler, Atampy26, invalid, Notex. This README was automatically generated from the mod's manifest.
+`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex. This README was automatically generated from the mod's manifest.
