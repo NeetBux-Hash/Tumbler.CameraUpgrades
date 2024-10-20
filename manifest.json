@@ -39,6 +39,13 @@
 			"contentFolders": ["content/Fix/zoomontop"]
 		},
 		{
+			"name": "Fix - Proper flash in picture mode",
+			"tooltip": "Stops the flash fading away completely so you can see pictures in the dark better (example; club in Berlin)",
+			"type": "checkbox",
+			
+			"contentFolders": ["content/Fix/fix static flash"]
+		},
+		{
 			"name": "Functions - Instinct in Normal Camera",
 			"tooltip": "Gives instinct in normal Camera like the Suspect Camera does",
 			"type": "checkbox",
