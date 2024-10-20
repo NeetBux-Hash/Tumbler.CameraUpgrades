@@ -4,7 +4,7 @@
 	"id": "Tumbler.CameraUpgrades",
 	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
-	"authors": ["Tumbler", "Atampy26", "invalid", "Notex"],
+	"authors": ["Tumbler", "Atampy26", "invalid", "Notex", "Sierra Knox"],
 	"loadAfter": ["anthonyfuller.selfiemode", "Atampy26.EnhancedCameraZoom"],
 	"frameworkVersion": "2.33.20",
 	"contentFolders": [],
