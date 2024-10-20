@@ -68,6 +68,8 @@ Interestingly, the selfie cam does have the ability to move with different stanc
 inside [modules:/zhm5itemweapon.class].pc_entitytype
 Could look for enums in library 
 
+Interesting enmus list called (*g_Enums)["InputControlNamesp.eHM5InputAction"] = See resources on site https://github.com/OrfeasZ/ZHMTools/blob/bcc95d0c3b78310ee20b558f063b51cb4bd89e2f/Libraries/ResourceLib/Src/Generated/HM3/ZHMEnums.cpp
+eIAKBMInventory
 
 -----------Editing-----------------
 
