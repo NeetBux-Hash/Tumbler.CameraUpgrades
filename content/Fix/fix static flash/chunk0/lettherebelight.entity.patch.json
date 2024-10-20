@@ -1,51 +1,6 @@
 {
 	"tempHash": "0072BC2B790950B2",
 	"tbluHash": "00DDE321E5355684",
-	"patch": [
-		{
-			"SubEntityOperation": [
-				"1f4c4c5de9470f87",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_fBlendSustainDuration",
-						"value": 2
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"1f4c4c5de9470f87",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_fBlendOutDuration",
-						"value": 2
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"9b0dc1408d6d8b61",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_fBlendSustainDuration",
-						"value": 2
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"9b0dc1408d6d8b61",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_fBlendOutDuration",
-						"value": 2
-					}
-				}
-			]
-		}
-	],
+	"patch": [],
 	"patchVersion": 6
 }
