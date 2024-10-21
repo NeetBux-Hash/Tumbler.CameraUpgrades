@@ -7,9 +7,9 @@
 ---
 
 ## Installation Instructions:
-1. **Download** the mod from the [GitHub Releases](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/updates.json).
-2. **Extract** the files into your *Hitman WOA* mod folder.
-3. Open **Simple Mod Framework (SMF)**, and ensure the mod is enabled.
+1. **Download** the mod from the [GitHub Releases](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/tag/0.4.2).
+2. Open **Simple Mod Framework (SMF)**, and **click on add a mod**.
+3. **Enable** the mod in the *Simple Mod Framework* program and click the deploy button.
 
 ---
 
