@@ -36,7 +36,7 @@ Thanks for the clarification! Here’s the revised explanation in the README:
 The mod modifies these internal actions, but the potential issue occurs if you’ve changed the keybindings for these actions in your game settings.
 
 ### Example:
-In the game files, the **Prime Tag** option changes the action from **eGameInputCrouch** (default crouch action) to **eGameInputCloseCombatChoke** (default melee action). If you’ve remapped **eGameInputCrouch** or **eGameInputCloseCombatChoke** to a different key in your keybindings, this mod might not function as expected. However, if you’re using the **default keybindings**, the mod should work without issue.
+In this mod, the **Prime Tag** option changes the action in the game files from **eGameInputCrouch** (default crouch action) to **eGameInputCloseCombatChoke (A/Q)** (default melee action). If you’ve remapped **eGameInputCloseCombatChoke (default A/Q)** to a different key in your keybindings, this mod might not function as expected. However, if you’re using the **default keybindings**, the mod should work without issue.
 
 ---
 
