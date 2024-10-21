@@ -54,6 +54,16 @@
 			"enabledByDefault": true,
 			"contentFolders": ["content/Functions/spycamnoproxy"]
 		},
+
+		{
+			"name": "Functions - Disable Proximity based intel scanning",
+			"tooltip": "Completely removes the distance filter for intel scanning so you can scan the intel to unlock the safe from any distance. Note: The visual effect can get buggy with multiple intel in sight but you can also scan multiple intel at the same time",
+			"type": "checkbox",
+			"image": "content/pics/distanceintel.gif",
+			"enabledByDefault": true,
+			"contentFolders": ["content/Functions/intelreach"]
+		},
+
 		{
 			"name": "Functions - Reset Zoom on Exit",
 			"tooltip": "Resets the zoom slider to 1x whenever exiting the normal camera. Basically made as an add-on for Atampy 26's Enhanced Camera Zoom mod because the normal camera lacks this function by default.",
