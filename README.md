@@ -1,8 +1,5 @@
-Here’s the cleaned-up version of your README with more streamlined language and structure:
 
----
-
-# Camera Upgrades Mod - Version 0.4.2
+# Camera Upgrades Mod 
 
 ## Overview:
 **Camera Upgrades** is a mod for *Hitman WOA* that overhauls both the regular and suspect cameras, adding new features and fixes to enhance gameplay. This mod gives players more control over camera behavior and includes helpful customization options for different playstyles.
@@ -18,13 +15,13 @@ Here’s the cleaned-up version of your README with more streamlined language an
 
 ## Key Considerations:
 ### Keyboard Layouts:
-This mod uses default keybinds for many features. Depending on your keyboard layout (QWERTY, AZERTY, Chinese, etc.), the keys for certain actions may differ. For instance, options listed as **"A/Q"** refer to the key next to **W** on your layout.
+This mod uses default keybinds for many features. Depending on your keyboard layout (QWERTY, AZERTY, Chinese, etc.), the keys for certain actions may differ. For instance, options listed as **"A/Q"** refer to the key next to your walk forward button, usually **W or Z** depending on your keyboard layout.
 
-Be sure to check your keybindings in the game settings if something feels off, as changes may affect how the mod interacts with your setup.
+Be sure to double check your keybindings in the game settings if something is off, as the options are configured to swap default inputs and may affect how the mod interacts with your custom keybindings. (But who changes E to open door, really?) 
 
 ---
 
-### Important Notes on Keybindings:
+### Clarificated Notes on Keybindings:
 ### How Hitman Handles Inputs:
 *Hitman WOA* uses internal references like **eGameInputActions** for key inputs, which are mapped to actions rather than specific keys. For example:
 - **eGameInputCrouch**: The default action for crouching (usually mapped to "C").
@@ -45,7 +42,7 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
    This option doesn’t affect gameplay but is a reminder that you understand the mod's input changes. Checking this confirms you’ve read through everything.
 
 - **I failed to understand**  
-   If you're confused by the options, this suggests uninstalling and reinstalling the mod to reset any changed settings you made back to the default enabled options. It has no impact on gameplay but serves as a warning not to enable settings you don't fully understand.
+   If you're confused by the options and made some changes that produced undesirable outcomes in the game, this suggests uninstalling and reinstalling the mod to reset any changed settings you made back to the default enabled options which don't turn on those options by default when installing the mod. It has no impact on gameplay but serves as a warning not to enable settings you don't fully understand.
 
 ---
 
@@ -66,7 +63,7 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
    Adds **Instinct Mode** to the normal camera, allowing you to highlight targets and items while using it.
 
 - **Disable Proximity-based Tagging**  
-   Removes the distance restriction on suspect tagging, letting you tag suspects from anywhere.
+   Removes the distance restriction on suspect tagging, letting you tag suspects from any distance.
 
 - **Reset Zoom on Exit**  
    Automatically resets the zoom level to 1x when exiting the normal camera, ensuring consistent behavior.
@@ -78,7 +75,7 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
 
 ### Input Settings:
 - **Scroll to Zoom**  
-   Enables zooming with the mouse scroll wheel. However, this will swap the up/down and left/right controls, which may affect your photo menu navigation. Depending on your keyboard layout and default button bindings, **Z/W** and **X** keys will be used to go up or down instead. A fix for this is to come. 
+   Enables zooming with the mouse scroll wheel. However, this will swap the up/down and left/right controls, which may affect your photo menu navigation. Depending on your keyboard layout and default button bindings, **Z/W** and **X** keys will be used to go up or down instead. A fix for this is planned which will use your mouse's side buttons. 
 
 ---
 
@@ -108,7 +105,7 @@ This group controls the buttons for toggling the viewfinder in photo mode.
    Moves the **Hide Menu** button for the normal camera to the **Use button (E)**, matching the suspect camera.
 
 - **Suspect camera to A/Q**  
-   Sets the **Viewfinder Toggle** for the suspect camera to **Melee button (A/Q)**, matching the normal camera default button to hide UI instead.
+   Sets the **Viewfinder Toggle** for the suspect camera to **Melee button (A/Q)**, matching the normal camera's default button to hide UI instead.
 
 ---
 
@@ -116,7 +113,7 @@ This group controls the buttons for toggling the viewfinder in photo mode.
 These options modify the suspect camera’s zoom behavior.
 
 - **Doesn’t touch any zoom options**  
-   Leaves the suspect camera zoom unchanged.
+   Leaves any suspect camera zoom functionality, unchanged.
   
 - **Increment Steps Zoom Fix**  
    Fixes the zoom to increase in smaller 1x steps instead of jumping from 1x to 4x.
@@ -157,7 +154,7 @@ These options modify the suspect camera’s zoom behavior.
 ---
 
 ## Troubleshooting:
-For questions or issues, join the [**Glacier Modding Discord**](https://discord.gg/6UDtuYhZP6). Additionally, new mod releases are automatically displayed in SMF, from where you can download updates.
+For questions or issues, join the [**Glacier Modding Discord**](https://discord.gg/6UDtuYhZP6). Additionally, new mod releases are automatically displayed in SMF, from where you can download them.
 
 ---
 
@@ -165,7 +162,7 @@ For questions or issues, join the [**Glacier Modding Discord**](https://discord.
 
 ---
 
-`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex, Sierra Knox, and Lux Manifestus.
+`Tumbler.CameraUpgrades` by Tumbler, Atampy26, invalid, Notex, Sierra Knox, and Lux Manifestus.
 
 ---
 
