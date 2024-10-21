@@ -140,18 +140,6 @@ These options control how the suspect camera zoom behaves.
 - **Self Cleaning UI**  
    Dynamically hides UI elements like zoom or DOF controls when they are unavailable, keeping the interface clean.
 
----
-
-## Adding Pictures:
-You can enhance the README by including pictures or GIFs to visually explain each option. Place your images in a **content/pics/** folder and reference them like this:
-
-```markdown
-![Zoom Fix Example](content/pics/zoomreset.gif)
-```
-
-Ensure that each image clearly shows what each option does to make it easier for users to understand.
-
----
 
 ## Troubleshooting:
 For issues or further clarification, join the **Glacier Modding Discord**. We’re always available to help with any confusion or questions. Additionally, automatic updates for SMF will be added in the future.
