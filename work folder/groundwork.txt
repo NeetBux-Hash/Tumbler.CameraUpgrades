@@ -21,6 +21,10 @@ camera_scan_intel_object
 009C268301A2A812.TEMP
 [assembly:/_pro/design/items/prop_evergreen_runtimes.template?/prop_gadget_evergreen_spycam_runtime.entitytemplate].pc_entitytemplate
 
+Results for blendweight;
+000385625DEFB097.CPPT
+[modules:/zrenderpostfilterparametersentity.class].pc_entitytype
+
 - Refine distance tagging from distance by highlighting actors in crosshairs. TOO ADVANCED for me atm
 
 
