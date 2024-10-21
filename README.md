@@ -22,8 +22,6 @@ This mod uses default keybinds for many features. Depending on your keyboard lay
 
 Be sure to check your keybindings in the game settings if something feels off, as changes may affect how the mod interacts with your setup.
 
-Thanks for the clarification! Here’s the revised explanation in the README:
-
 ---
 
 ### Important Notes on Keybindings:
@@ -47,13 +45,13 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
    This option doesn’t affect gameplay but is a reminder that you understand the mod's input changes. Checking this confirms you’ve read through everything.
 
 - **I failed to understand**  
-   If you're confused by the options, this suggests uninstalling and reinstalling the mod to reset any changed settings back to the default enabled options. It has no impact on gameplay but serves as a warning not to enable settings you don't fully understand.
+   If you're confused by the options, this suggests uninstalling and reinstalling the mod to reset any changed settings you made back to the default enabled options. It has no impact on gameplay but serves as a warning not to enable settings you don't fully understand.
 
 ---
 
 ### Fixes:
 - **Stay low!**  
-   Prevents Agent 47 from standing up when using the suspect camera and allows crouching while using it without affecting tagging. Ideal for stealth-focused players.
+   Prevents Agent 47 from standing up when using the suspect camera and allows crouching while using it. Best in used in combination with any of the **Prime set button** options 
 
 - **Zoom slider on top**  
    Moves the zoom slider to the top of the photo mode menu. This works well with Anthony Fuller’s **Selfie Mode Mod**.
@@ -71,7 +69,7 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
    Removes the distance restriction on suspect tagging, letting you tag suspects from anywhere.
 
 - **Reset Zoom on Exit**  
-   Automatically resets the zoom level to 1x when exiting the camera, ensuring consistent behavior.
+   Automatically resets the zoom level to 1x when exiting the normal camera, ensuring consistent behavior.
 
 - **Disable Suspect Reset Zoom**  
    Keeps your zoom level when exiting and re-entering the suspect camera's aiming mode.
@@ -80,20 +78,20 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
 
 ### Input Settings:
 - **Scroll to Zoom**  
-   Enables zooming with the mouse scroll wheel. However, this will swap the up/down and left/right controls, which may affect your photo menu navigation. Depending on your layout, **Z/W** and **X** keys will be used to go up or down instead.
+   Enables zooming with the mouse scroll wheel. However, this will swap the up/down and left/right controls, which may affect your photo menu navigation. Depending on your keyboard layout and default button bindings, **Z/W** and **X** keys will be used to go up or down instead. A fix for this is to come. 
 
 ---
 
 ### Group Selections:
 
 #### Prime Set Button (For Suspect Tagging):
-This group lets you customize the **Prime Tag** button, which defaults to **Crouch (C)**.
+This group lets you customize the **Prime Tag** button, which by default is set to **Crouch (C)**.
 
 - **Off**  
    Leaves the **Crouch (C)** button as the **Prime Set** button.
   
 - **Switch to A/Q**  
-   Changes the **Prime Tag** action to the **Melee button (A/Q)**, depending on your layout. This prevents accidental suspect tagging while crouching.
+   Changes the **Prime Tag** action to the **Melee button (A/Q)**, depending on your keyboard layout. This prevents accidental suspect tagging while crouching.
 
 - **Switch to E**  
    Maps the **Prime Tag** function to the **Use button (E)** for easier access near the movement keys.
@@ -110,7 +108,7 @@ This group controls the buttons for toggling the viewfinder in photo mode.
    Moves the **Hide Menu** button for the normal camera to the **Use button (E)**, matching the suspect camera.
 
 - **Suspect camera to A/Q**  
-   Sets the **Viewfinder Toggle** for the suspect camera to **Melee button (A/Q)**, matching the normal camera.
+   Sets the **Viewfinder Toggle** for the suspect camera to **Melee button (A/Q)**, matching the normal camera default button to hide UI instead.
 
 ---
 
@@ -124,10 +122,10 @@ These options modify the suspect camera’s zoom behavior.
    Fixes the zoom to increase in smaller 1x steps instead of jumping from 1x to 4x.
 
 - **10x Zoom with 1x Increment Steps**  
-   Extends the zoom to 10x and allows for finer zoom control with 1x increments. This is recommended for players who want more precision and zoom.
+   Extends the zoom to 10x and allows for finer zoom control with 1x increments. This is recommended for players who want more precision AND zoom.
 
 - **10x Zoom but in 2x Increments**  
-   Offers 10x zoom with larger 2x steps (2x, 4x, etc.), providing quicker zoom but less precision. It removes the 1x entirely for the moment only.
+   Offers 10x zoom with larger 2x steps (2x, 4x, etc.), providing quicker zoom but less precision. It removes the 1x entirely for the moment untill a proper fix has been implemented.
 
 ---
 
