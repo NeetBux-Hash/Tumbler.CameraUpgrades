@@ -21,6 +21,32 @@ Be mindful of how these differences may affect your controls. If something seems
 
 ---
 
+## Important Notes on Keyboard Layouts and Input Behavior:
+### How Hitman Uses Input Actions:
+In the game files, **Hitman WOA** handles key inputs using internal references known as **eGameInputActions**. These are not tied directly to the specific key on your keyboard, but to the action they represent. For example:
+- **eGameInputCrouch**: Default action for crouching (often set to "C").
+- **eGameInputCloseCombatChoke**: Action for performing melee (often set to "A" or "Q" based on layout).
+- **eGameInputActionPerform**: Used for various "use" actions (often set to "E").
+
+The mod uses these internal action names to modify or add camera features, but this can sometimes create unexpected behavior if you've customized your keybindings in-game.
+
+---
+
+### Keyboard Layouts and Mod Options:
+Depending on your keyboard layout (QWERTY, AZERTY, etc.), the default key assigned to an action like crouching or melee can vary. For example:
+- In **QWERTY**: The **Prime Set** button might be mapped to "C" (for crouch), and melee to "A."
+- In **AZERTY**: The **Prime Set** button might be "C," but the key next to "W" will be "Q," not "A."
+
+If you have customized keybindings in-game, the mod’s default options might not function as expected, as they rely on the game’s internal action names, not your actual key configuration. Be aware that if you change keybinds in your in-game settings, **some mod options might become strange or unresponsive.**
+
+For example:
+- The **Prime Tag** option in this mod changes the action from **eGameInputCrouch** (default crouch key) to **eGameInputCloseCombatChoke** (default melee key). If you’ve customized your keybindings, this could behave differently than intended.
+- If the **melee key** in your game is no longer **A/Q**, the mod options related to tagging may conflict with your custom setup.
+
+
+
+---
+
 ## Mod Options and Features:
 
 ### General:
@@ -137,11 +163,10 @@ These options control how the suspect camera zoom behaves.
 
 
 ## Troubleshooting:
-For issues or further clarification, join the **Glacier Modding Discord**. We’re always available to help with any confusion or questions. Additionally, automatic updates for SMF will be added in the future.
+For issues or further clarification, join the **Glacier Modding Discord**. We’re always available to help with any confusion or questions. Additionally, automatic updates for the mod are automatically displayed in SMF if a new release drops.
 
 ---
 
-This README aims to provide a clear explanation of the mod’s options, and the images can help bridge any understanding gaps.
 
 [Install](https://hitman-resources.netlify.app/smf-install-link/https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/mod.framework.zip) | [Download](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/mod.framework.zip)
 
