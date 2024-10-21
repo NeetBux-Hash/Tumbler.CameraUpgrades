@@ -1,49 +1,42 @@
+Here’s the cleaned-up version of your README with more streamlined language and structure:
 
-# Camera Upgrades Mod 
+---
+
+# Camera Upgrades Mod - Version 0.4.2
 
 ## Overview:
-**Camera Upgrades** is a mod designed to overhaul both the regular and suspect cameras in *Hitman WOA*, adding new features and fixes to enhance gameplay. The mod gives players more control over the camera’s behavior, adds helpful customization options, and improves usability for different playstyles.
+**Camera Upgrades** is a mod for *Hitman WOA* that overhauls both the regular and suspect cameras, adding new features and fixes to enhance gameplay. This mod gives players more control over camera behavior and includes helpful customization options for different playstyles.
 
 ---
 
 ## Installation Instructions:
-1. **Download** the mod from the [GitHub Releases](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/tag/0.4.2).
-2. Open **Simple Mod Framework (SMF)**, and **click on add a mod**.
-3. **Enable** the mod in the *Simple Mod Framework* program and click the deploy button.
+1. **Download** the mod from the [GitHub Releases](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases).
+2. Open **Simple Mod Framework (SMF)** and click **Add a Mod**.
+3. **Enable** the mod in SMF, then click **Deploy**.
 
 ---
 
 ## Key Considerations:
 ### Keyboard Layouts:
-The mod includes various input settings based on **default keybinds**. Depending on your keyboard layout (QWERTY, AZERTY, Chinese, etc.), the keys for certain actions may differ. For example, options listed as **"A/Q"** refer to the key next to your **W** key, depending on whether you use QWERTY or AZERTY layouts.
+This mod uses default keybinds for many features. Depending on your keyboard layout (QWERTY, AZERTY, Chinese, etc.), the keys for certain actions may differ. For instance, options listed as **"A/Q"** refer to the key next to **W** on your layout.
 
-Be mindful of how these differences may affect your controls. If something seems off, check your keybindings in the game settings.
+Be sure to check your keybindings in the game settings if something feels off, as changes may affect how the mod interacts with your setup.
 
----
-
-## Important Notes on Keyboard Layouts and Input Behavior:
-### How Hitman Uses Input Actions:
-In the game files, **Hitman WOA** handles key inputs using internal references known as **eGameInputActions**. These are not tied directly to the specific key on your keyboard, but to the action they represent. For example:
-- **eGameInputCrouch**: Default action for crouching (often set to "C").
-- **eGameInputCloseCombatChoke**: Action for performing melee (often set to "A" or "Q" based on layout).
-- **eGameInputActionPerform**: Used for various "use" actions (often set to "E").
-
-The mod uses these internal action names to modify or add camera features, but this can sometimes create unexpected behavior if you've customized your keybindings in-game.
+Thanks for the clarification! Here’s the revised explanation in the README:
 
 ---
 
-### Keyboard Layouts and Mod Options:
-Depending on your keyboard layout (QWERTY, AZERTY, etc.), the default key assigned to an action like crouching or melee can vary. For example:
-- In **QWERTY**: The **Prime Set** button might be mapped to "C" (for crouch), and melee to "A."
-- In **AZERTY**: The **Prime Set** button might be "C," but the key next to "W" will be "Q," not "A."
+### Important Notes on Keybindings:
+### How Hitman Handles Inputs:
+*Hitman WOA* uses internal references like **eGameInputActions** for key inputs, which are mapped to actions rather than specific keys. For example:
+- **eGameInputCrouch**: The default action for crouching (usually mapped to "C").
+- **eGameInputCloseCombatChoke**: The action for melee attacks, often mapped to "A" or "Q" depending on your layout.
+- **eGameInputActionPerform**: Typically assigned to the "use" action (commonly "E").
 
-If you have customized keybindings in-game, the mod’s default options might not function as expected, as they rely on the game’s internal action names, not your actual key configuration. Be aware that if you change keybinds in your in-game settings, **some mod options might become strange or unresponsive.**
+The mod modifies these internal actions, but the potential issue occurs if you’ve changed the keybindings for these actions in your game settings.
 
-For example:
-- The **Prime Tag** option in this mod changes the action from **eGameInputCrouch** (default crouch key) to **eGameInputCloseCombatChoke** (default melee key). If you’ve customized your keybindings, this could behave differently than intended.
-- If the **melee key** in your game is no longer **A/Q**, the mod options related to tagging may conflict with your custom setup.
-
-
+### Example:
+In the game files, the **Prime Tag** option changes the action from **eGameInputCrouch** (default crouch action) to **eGameInputCloseCombatChoke** (default melee action). If you’ve remapped **eGameInputCrouch** or **eGameInputCloseCombatChoke** to a different key in your keybindings, this mod might not function as expected. However, if you’re using the **default keybindings**, the mod should work without issue.
 
 ---
 
@@ -51,125 +44,131 @@ For example:
 
 ### General:
 - **I agree!**  
-   This option doesn’t affect gameplay but is a reminder to ensure you understand the mod and its input changes. Checking this box simply indicates that you’ve read everything.
+   This option doesn’t affect gameplay but is a reminder that you understand the mod's input changes. Checking this confirms you’ve read through everything.
 
 - **I failed to understand**  
-   If you’re confused by the mod’s options, this is a suggestion to uninstall and reinstall the mod. Do not enable options unless you're sure of their functions. This also doesn’t impact gameplay but is included for clarification.
+   If you're confused by the options, this suggests uninstalling and reinstalling the mod to reset any changed settings back to the default enabled options. It has no impact on gameplay but serves as a warning not to enable settings you don't fully understand.
 
 ---
 
 ### Fixes:
 - **Stay low!**  
-   Prevents Agent 47 from standing up when using the suspect camera. It also allows you to crouch while using the camera without affecting suspect tagging. This is particularly useful for stealthier playstyles.
+   Prevents Agent 47 from standing up when using the suspect camera and allows crouching while using it without affecting tagging. Ideal for stealth-focused players.
 
 - **Zoom slider on top**  
-   Moves the zoom slider to the top of the photo mode menu. If you're using **Selfie Mode Mod** by Anthony Fuller, this will help you organize your menu better.
+   Moves the zoom slider to the top of the photo mode menu. This works well with Anthony Fuller’s **Selfie Mode Mod**.
 
 - **Proper flash in picture mode**  
-   Keeps the flash from fading away fully when taking photos, improving visibility in dark environments (such as Berlin’s club).
+   Prevents the flash from fading completely, enhancing visibility in dark environments like the Berlin club mission.
 
 ---
 
 ### Camera Functions:
 - **Instinct in Normal Camera**  
-   This enables the **Instinct Mode** for the normal camera, similar to how it works in the suspect camera. You can use this to highlight suspects and points of interest while using the regular camera.
+   Adds **Instinct Mode** to the normal camera, allowing you to highlight targets and items while using it.
 
 - **Disable Proximity-based Tagging**  
-   Removes the distance restriction for suspect tagging, allowing you to tag suspects from any distance. This option is especially useful for long-range identification and keeps the gameplay more dynamic.
+   Removes the distance restriction on suspect tagging, letting you tag suspects from anywhere.
 
 - **Reset Zoom on Exit**  
-   Resets the zoom level to 1x whenever you exit the camera. This ensures you return to a default zoom level and avoid being stuck at awkward zoom levels after switching out.
+   Automatically resets the zoom level to 1x when exiting the camera, ensuring consistent behavior.
 
 - **Disable Suspect Reset Zoom**  
-   Prevents the suspect camera from resetting its zoom when exiting and re-entering aiming mode. Only enable this if you want the zoom level to stay consistent between uses.
+   Keeps your zoom level when exiting and re-entering the suspect camera's aiming mode.
 
 ---
 
 ### Input Settings:
 - **Scroll to Zoom**  
-   Enables zooming via the mouse scroll wheel for both cameras. Be aware that this option will swap the up/down and left/right controls, which can affect menu navigation. The navigation keys will become **Z/W** and **X** depending on your keyboard layout.
+   Enables zooming with the mouse scroll wheel. However, this will swap the up/down and left/right controls, which may affect your photo menu navigation. Depending on your layout, **Z/W** and **X** keys will be used to go up or down instead.
 
 ---
 
 ### Group Selections:
 
 #### Prime Set Button (For Suspect Tagging):
-This group allows you to customize the **Prime Tag** button, which defaults to **Crouch (C)**. You can change it to a different key to prevent accidentally tagging suspects while crouching.
+This group lets you customize the **Prime Tag** button, which defaults to **Crouch (C)**.
 
 - **Off**  
-   Keeps the default crouch key as the prime tag button (C).
+   Leaves the **Crouch (C)** button as the **Prime Set** button.
   
 - **Switch to A/Q**  
-   Moves the prime tag function to the **Melee button** (A/Q), based on your layout. This helps separate crouch and suspect tagging functions.
+   Changes the **Prime Tag** action to the **Melee button (A/Q)**, depending on your layout. This prevents accidental suspect tagging while crouching.
 
 - **Switch to E**  
-   Moves the prime tag button to the **Use button** (E), which is closer to the suspect tag key for easier access.
-
-#### Viewfinder/Hide Menu Button (Toggle):
-This group allows you to adjust the buttons used for toggling the viewfinder in photo mode. The default buttons are **A/Q** for the normal camera and **E** for the suspect camera.
-
-- **Off**  
-   Keeps the default settings.
-  
-- **Normal camera to E**  
-   Sets the **Hide Menu** button for the normal camera to **E**, matching the suspect camera.
-
-- **Suspect camera to A/Q**  
-   Sets the **Viewfinder Toggle** button for the suspect camera to **A/Q**, matching the normal camera.
+   Maps the **Prime Tag** function to the **Use button (E)** for easier access near the movement keys.
 
 ---
 
-### Zoom Options for the Suspect Camera:
-These options control how the suspect camera zoom behaves.
+#### Viewfinder/Hide Menu Button (Toggle):
+This group controls the buttons for toggling the viewfinder in photo mode.
+
+- **Off**  
+   Keeps the default settings: **Melee button (A/Q)** for the normal camera and **Use button (E)** for the suspect camera.
+  
+- **Normal camera to E**  
+   Moves the **Hide Menu** button for the normal camera to the **Use button (E)**, matching the suspect camera.
+
+- **Suspect camera to A/Q**  
+   Sets the **Viewfinder Toggle** for the suspect camera to **Melee button (A/Q)**, matching the normal camera.
+
+---
+
+### Suspect Camera Zoom:
+These options modify the suspect camera’s zoom behavior.
 
 - **Doesn’t touch any zoom options**  
-   Leaves the suspect camera zoom untouched.
+   Leaves the suspect camera zoom unchanged.
   
 - **Increment Steps Zoom Fix**  
-   Fixes the suspect camera zoom increments, allowing it to zoom in 1x steps instead of jumping straight from 1x to 4x.
+   Fixes the zoom to increase in smaller 1x steps instead of jumping from 1x to 4x.
 
 - **10x Zoom with 1x Increment Steps**  
-   Extends the zoom to 10x and allows zooming in 1x increments. This is the recommended option for players who want greater zoom control.
+   Extends the zoom to 10x and allows for finer zoom control with 1x increments. This is recommended for players who want more precision and zoom.
 
 - **10x Zoom but in 2x Increments**  
-   Allows 10x zoom but with larger 2x increments (2x, 4x, 6x, etc.). This can be faster but lacks a default 1x option at the moment.
+   Offers 10x zoom with larger 2x steps (2x, 4x, etc.), providing quicker zoom but less precision. It removes the 1x entirely for the moment only.
 
 ---
 
 ### Editing Options:
 - **Suspect Camera Filters**  
-   Adds the filter options from the normal camera to the suspect camera, allowing you to apply visual effects while using it.
+   Adds the normal camera’s picture editing options to the suspect camera for applying visual effects.
 
 - **Suspect Camera DOF (Depth of Field)**  
-   Adds a DOF slider to the suspect camera, giving you more control over focus.
+   Adds a DOF slider to the suspect camera, giving you more focus control.
 
 - **Remove Normal Camera Filters/DOF**  
-   Removes the filters or DOF sliders from the normal camera if you don't want them.
+   Removes filter and DOF options from the normal camera if you don’t want or need them.
 
 ---
 
 ### UI Enhancements:
 - **Disable Cripple Camera HUD**  
-   Removes the large “USE CAMERA” button from the HUD when holding the camera. This declutters the interface, making it less intrusive and distracting.
+   Removes the large “USE CAMERA” prompt from the HUD, decluttering the interface.
 
 - **Clutter Off**  
-   Allows you to toggle the camera UI off while not in picture mode for a clear view.
+   Makes you able to toggle off the camera UI at any time instead of just when you're in picture mode.
 
 - **Clear the Grid**  
-   Removes gridlines from the suspect camera to improve visibility and make the scene less obstructed.
+   Removes gridlines from the suspect camera, improving visibility.
 
 - **Self Cleaning UI**  
-   Dynamically hides UI elements like zoom or DOF controls when they are unavailable, keeping the interface clean.
-
-
-## Troubleshooting:
-For issues or further clarification, join the **Glacier Modding Discord**. We’re always available to help with any confusion or questions. Additionally, automatic updates for the mod are automatically displayed in SMF if a new release drops.
+   Dynamically hides UI elements that are irrelevant to your current camera mode (like zoom or DOF).
 
 ---
 
+## Troubleshooting:
+For questions or issues, join the [**Glacier Modding Discord**](https://discord.gg/6UDtuYhZP6). Additionally, new mod releases are automatically displayed in SMF, from where you can download updates.
+
+---
 
 [Install](https://hitman-resources.netlify.app/smf-install-link/https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/mod.framework.zip) | [Download](https://github.com/NeetBux-Hash/Tumbler.CameraUpgrades/releases/latest/download/mod.framework.zip)
 
 ---
 
-`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex, Sierra Knox and Lux Manifestus. This README was automatically generated from the mod's manifest.
+`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex, Sierra Knox, and Lux Manifestus.
+
+---
+
+Let me know if you'd like to make further adjustments or add more visuals to the file!
