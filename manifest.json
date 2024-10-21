@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.4.2",
+	"version": "0.5.0",
 	"id": "Tumbler.CameraUpgrades",
 	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
@@ -54,7 +54,6 @@
 			"enabledByDefault": true,
 			"contentFolders": ["content/Functions/spycamnoproxy"]
 		},
-
 		{
 			"name": "Functions - Disable Proximity based intel scanning",
 			"tooltip": "Completely removes the distance filter for intel scanning so you can scan the intel to unlock the safe from any distance. Note: The visual effect can get buggy with multiple intel in sight but you can also scan multiple intel at the same time",
@@ -63,7 +62,6 @@
 			"enabledByDefault": true,
 			"contentFolders": ["content/Functions/intelreach"]
 		},
-
 		{
 			"name": "Functions - Reset Zoom on Exit",
 			"tooltip": "Resets the zoom slider to 1x whenever exiting the normal camera. Basically made as an add-on for Atampy 26's Enhanced Camera Zoom mod because the normal camera lacks this function by default.",
