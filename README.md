@@ -77,10 +77,10 @@ This group allows you to customize the **Prime Tag** button, which defaults to *
    Moves the prime tag function to the **Melee button** (A/Q), based on your layout. This helps separate crouch and suspect tagging functions.
 
 - **Switch to E**  
-   Moves the prime tag button to the **Use button** (E), which is close to the movement keys for easier access.
+   Moves the prime tag button to the **Use button** (E), which is closer to the suspect tag key for easier access.
 
 #### Viewfinder/Hide Menu Button (Toggle):
-This group allows you to adjust the buttons used for toggling the viewfinder in photo mode. The default buttons are **A** for the normal camera and **E** for the suspect camera.
+This group allows you to adjust the buttons used for toggling the viewfinder in photo mode. The default buttons are **A/Q** for the normal camera and **E** for the suspect camera.
 
 - **Off**  
    Keeps the default settings.
@@ -106,7 +106,7 @@ These options control how the suspect camera zoom behaves.
    Extends the zoom to 10x and allows zooming in 1x increments. This is the recommended option for players who want greater zoom control.
 
 - **10x Zoom but in 2x Increments**  
-   Allows 10x zoom but with larger 2x increments (2x, 4x, 6x, etc.). This can be faster but might feel less precise.
+   Allows 10x zoom but with larger 2x increments (2x, 4x, 6x, etc.). This can be faster but lacks a default 1x option at the moment.
 
 ---
 
@@ -118,16 +118,16 @@ These options control how the suspect camera zoom behaves.
    Adds a DOF slider to the suspect camera, giving you more control over focus.
 
 - **Remove Normal Camera Filters/DOF**  
-   Removes the filters or DOF sliders from the normal camera to reduce clutter.
+   Removes the filters or DOF sliders from the normal camera if you don't want them.
 
 ---
 
 ### UI Enhancements:
 - **Disable Cripple Camera HUD**  
-   Removes the large “USE CAMERA” button from the HUD when holding the camera. This declutters the interface, making it less intrusive.
+   Removes the large “USE CAMERA” button from the HUD when holding the camera. This declutters the interface, making it less intrusive and distracting.
 
 - **Clutter Off**  
-   Allows you to toggle the camera UI off for a more immersive experience.
+   Allows you to toggle the camera UI off while not in picture mode for a clear view.
 
 - **Clear the Grid**  
    Removes gridlines from the suspect camera to improve visibility and make the scene less obstructed.
