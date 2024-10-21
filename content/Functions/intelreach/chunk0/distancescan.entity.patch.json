@@ -8,17 +8,6 @@
 				{
 					"SetPropertyValue": {
 						"property_name": "m_fTriggerRadius",
-						"value": 9999.0
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"75f3cc70d70fcc61",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_fVisionConeAngle",
 						"value": 999
 					}
 				}
@@ -30,7 +19,7 @@
 				{
 					"SetPropertyValue": {
 						"property_name": "m_fMaxTriggerToRayDistance",
-						"value": 9999.0
+						"value": 999
 					}
 				}
 			]
