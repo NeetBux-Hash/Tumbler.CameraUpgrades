@@ -57,7 +57,7 @@
 
 		{
 			"name": "Functions - Disable Proximity based intel scanning",
-			"tooltip": "Completely removes the distance filter for intel scanning so you can scan the intel to unlock the safe from any distance",
+			"tooltip": "Completely removes the distance filter for intel scanning so you can scan the intel to unlock the safe from any distance. Note: The visual effect can get buggy with multiple intel in sight but you can also scan multiple intel at the same time",
 			"type": "checkbox",
 			"image": "content/pics/distanceintel.gif",
 			"enabledByDefault": true,
