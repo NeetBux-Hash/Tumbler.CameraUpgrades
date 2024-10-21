@@ -1,0 +1,40 @@
+{
+	"tempHash": "0040AAE0C098FD41",
+	"tbluHash": "008E64C246EA3FC8",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"75f3cc70d70fcc61",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_fTriggerRadius",
+						"value": 9999.0
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"75f3cc70d70fcc61",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_fVisionConeAngle",
+						"value": 999
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"75f3cc70d70fcc61",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_fMaxTriggerToRayDistance",
+						"value": 9999.0
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

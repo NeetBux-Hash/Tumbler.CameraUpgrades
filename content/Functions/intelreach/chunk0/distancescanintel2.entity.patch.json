@@ -1,0 +1,29 @@
+{
+	"tempHash": "00DBD52219AE2726",
+	"tbluHash": "003CB31FE4C35C5B",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"7f48105dbe08fc12",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_fTriggerRadius",
+						"value": 999.0
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"7f48105dbe08fc12",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_fMaxTriggerToRayDistance",
+						"value": 999
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
