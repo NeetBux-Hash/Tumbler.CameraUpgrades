@@ -171,4 +171,4 @@ For questions or issues, join the [**Glacier Modding Discord**](https://discord.
 
 ---
 
-Let me know if you'd like to make further adjustments or add more visuals to the file!
+Let me know if you'd like to make further adjustments or more clarfications to this Read me!
