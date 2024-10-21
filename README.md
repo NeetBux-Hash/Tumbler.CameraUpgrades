@@ -1,10 +1,5 @@
-# Camera Upgrades
 
-Here’s a restructured and improved version of your README file, with more emphasis on keyboard layout differences and excluding technical terms like "tooltip." It also leaves room for pictures, which you can include as necessary:
-
----
-
-# Camera Upgrades Mod - Version 0.4.2
+# Camera Upgrades Mod 
 
 ## Overview:
 **Camera Upgrades** is a mod designed to overhaul both the regular and suspect cameras in *Hitman WOA*, adding new features and fixes to enhance gameplay. The mod gives players more control over the camera’s behavior, adds helpful customization options, and improves usability for different playstyles.
