@@ -147,4 +147,4 @@ This README aims to provide a clear explanation of the mod’s options, and the 
 
 ---
 
-`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex. This README was automatically generated from the mod's manifest.
+`Tumbler.CameraUpgrades` v0.4.2, by Tumbler, Atampy26, invalid, Notex, Sierra Knox and Lux Manifestus. This README was automatically generated from the mod's manifest.
