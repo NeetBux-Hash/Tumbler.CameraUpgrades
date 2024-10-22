@@ -81,7 +81,7 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
 -   **Disable Suspect Reset Zoom**  
      Keeps your zoom level when exiting and re-entering the suspect camera's aiming mode.
 
--   **Disable Proximity-based Intel Scanning
+-   **Disable Proximity-based Intel Scanning**
     This option removes the distance limit for intel scanning, allowing you to scan intel to unlock safes from any distance. Be aware that the visual effect may become buggy if multiple pieces of intel are within view, but this also means you can scan several intel items at once.
 
 
