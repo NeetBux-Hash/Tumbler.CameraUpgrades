@@ -25,6 +25,8 @@ Results for blendweight;
 000385625DEFB097.CPPT
 [modules:/zrenderpostfilterparametersentity.class].pc_entitytype
 
+Permanent light source factory?; [modules:/zlightsaveaspect.class].entitytype).pc_entitytype
+
 - Refine distance tagging from distance by highlighting actors in crosshairs. TOO ADVANCED for me atm
 
 
