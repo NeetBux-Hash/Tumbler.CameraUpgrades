@@ -1,0 +1,14 @@
+{
+	"tempHash": "004F945201F83AB1",
+	"tbluHash": "0061ABD80908FB2A",
+	"patch": [
+		{
+			"AddComment": {
+				"parent": "fffffffffffffffe",
+				"name": "Notes",
+				"text": "Find lightscreen here. "
+			}
+		}
+	],
+	"patchVersion": 6
+}
