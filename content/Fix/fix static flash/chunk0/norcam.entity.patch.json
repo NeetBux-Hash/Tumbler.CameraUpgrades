@@ -410,6 +410,7 @@
 								"y": 0.7808470129966736
 							}
 						},
+						"m_bVisible": { "type": "bool", "value": false },
 						"On": { "type": "bool", "value": false },
 						"DiffusePower": {
 							"type": "float32",
@@ -535,7 +536,10 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "TurnOn": ["cafe1b65ac47dd19"] },
+						"OnTrue": {
+							"TurnOn": ["cafe1b65ac47dd19"],
+							"MakeVisible": ["cafe1b65ac47dd19"]
+						},
 						"OnFalse": { "TurnOff": ["cafe1b65ac47dd19"] }
 					}
 				}
