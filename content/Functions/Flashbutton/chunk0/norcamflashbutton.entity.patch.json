@@ -4,9 +4,19 @@
 	"patch": [
 		{
 			"SubEntityOperation": [
-				"5ab7b5e560fab3fd",
+				"a7484674383510cb",
 				{
-					"AddEventConnection": ["OnFalse", "MakeInvisible", "cafe6f61790b72e3"]
+					"PatchArrayPropertyValue": [
+						"m_aActions",
+						[
+							{
+								"AddItemAfter": [
+									"e8ad90277a2c3268",
+									"cafe82aac4df09dc"
+								]
+							}
+						]
+					]
 				}
 			]
 		},
@@ -14,7 +24,23 @@
 			"SubEntityOperation": [
 				"5ab7b5e560fab3fd",
 				{
-					"AddEventConnection": ["OnTrue", "MakeVisible", "cafe6f61790b72e3"]
+					"AddEventConnection": [
+						"OnFalse",
+						"MakeInvisible",
+						"cafe6f61790b72e3"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5ab7b5e560fab3fd",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"MakeVisible",
+						"cafe6f61790b72e3"
+					]
 				}
 			]
 		},
@@ -68,6 +94,31 @@
 							"postInit": true
 						},
 						"m_bVisible": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe82aac4df09dc",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Prompt_Toggle Flash",
+					"factory": "[modules:/zphotomodemenuactionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuactionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eInputFlag": {
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputActionPickup"
+						},
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "0047DE46D20AC3B5",
+								"flag": "5F"
+							}
+						},
+						"m_bIsVisible": { "type": "bool", "value": true }
 					}
 				}
 			]

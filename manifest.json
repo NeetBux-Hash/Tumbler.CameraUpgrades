@@ -46,6 +46,22 @@
 			"contentFolders": ["content/Fix/fix static flash"]
 		},
 		{
+			"name": "Functions - Flash button",
+			"tooltip": "Makes the flash option toggleable for permanent lightning when moving around",
+			"type": "checkbox",
+	
+			"contentFolders": ["content/Functions/Flashbutton"],
+			"localisation": {
+				"english": {
+					"UI_FLASH_BUTTON": "Flash"
+				}
+			},
+			"localisedLines": {
+				"0047DE46D20AC3B5": "UI_FLASH_BUTTON"
+			}
+			
+		},
+		{
 			"name": "Functions - Instinct in Normal Camera",
 			"tooltip": "Gives instinct in normal Camera like the Suspect Camera does",
 			"type": "checkbox",
