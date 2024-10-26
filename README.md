@@ -84,11 +84,9 @@ In this mod, the **Prime Tag** option changes the action in the game files from 
 -   **Disable Proximity-based Intel Scanning**  
      This option removes the distance limit for intel scanning, allowing you to scan intel to unlock safes from any distance. Be aware that the visual effect may become buggy if multiple pieces of intel are within view, but you can also scan several intel items at once.
 
-
 ---
 
 Let me know if you'd like to adjust the wording or add more detail!
-
 
 ---
 
