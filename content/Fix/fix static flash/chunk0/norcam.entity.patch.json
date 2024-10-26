@@ -3,39 +3,6 @@
 	"tbluHash": "000977D5F9070B8D",
 	"patch": [
 		{
-			"AddEntity": [
-				"cafe7344c53f8013",
-				{
-					"parent": "ca1bf3d9a532f5b1",
-					"name": "Lightbulb_B",
-					"factory": "[assembly:/_pro/environment/templates/props/lamps/lightbulb_a.template?/lightbulb_b.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/environment/templates/props/lamps/lightbulb_a.template?/lightbulb_b.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_mTransform": {
-							"type": "SMatrix43",
-							"value": {
-								"rotation": {
-									"x": -180.0,
-									"y": 0.0,
-									"z": -180.0
-								},
-								"position": {
-									"x": -0.009238243103027344,
-									"y": 0.0057760002091526985,
-									"z": -0.28301599621772766
-								}
-							}
-						},
-						"m_eidParent": {
-							"type": "SEntityTemplateReference",
-							"value": "95975e99b90f4059",
-							"postInit": true
-						}
-					}
-				}
-			]
-		},
-		{
 			"AddComment": {
 				"parent": "cafecf615dee28e3",
 				"name": "Notes",
