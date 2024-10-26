@@ -3,6 +3,986 @@
 	"tbluHash": "000977D5F9070B8D",
 	"patch": [
 		{
+			"AddEntity": [
+				"cafe4a85cbb4323a",
+				{
+					"parent": "cafee19316149146",
+					"name": "Light_Capsule_00",
+					"factory": "[modules:/zlightentity.class].pc_entitytype",
+					"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -90.00024309222118,
+									"y": 45.00160440726371,
+									"z": 0.00016206156485138509
+								},
+								"position": {
+									"x": 0.07704699784517288,
+									"y": -0.020569000393152237,
+									"z": -0.12444499880075456
+								}
+							}
+						},
+						"m_eLightType": {
+							"type": "ILightEntity.ELightType",
+							"value": "LT_CAPSULE"
+						},
+						"m_vAreaQuadSize": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.07655630260705948,
+								"y": 3.9949100017547607
+							}
+						},
+						"m_fAreaQuadViewFactorThreshold": {
+							"type": "float32",
+							"value": 0.03999999910593033
+						},
+						"m_bEnableLightFade": {
+							"type": "bool",
+							"value": true
+						},
+						"m_vBoxSize": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.27240899205207825,
+								"y": 4.0417799949646,
+								"z": 0.8135010004043579
+							}
+						},
+						"m_vBoxFadePos": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.025496799498796463,
+								"y": 0.10472399741411208,
+								"z": 0.0
+							}
+						},
+						"m_vBoxFadeNeg": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.2395730018615723,
+								"y": 0.09292759746313096,
+								"z": 0.05844059959053993
+							}
+						},
+						"m_bCastShadows": {
+							"type": "bool",
+							"value": false
+						},
+						"m_vFarAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.047582000494003296,
+								"y": 1.1455299854278564
+							}
+						},
+						"m_fCapsuleHeight": {
+							"type": "float32",
+							"value": 2.8367249965667725
+						},
+						"m_vNearAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.009999999776482582,
+								"y": 0.019999999552965164
+							}
+						},
+						"m_bUseDynamicShadowMap": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe37907db78190",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6c2ea46c37d4",
+				{
+					"parent": "cafee19316149146",
+					"name": "HM5ShotListener",
+					"factory": "[modules:/zhm5shotlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5shotlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Listener": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafe8d7f9057f67a",
+								"cafe37907db78190"
+							],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnHit": {
+							"MakeInvisible": ["cafe0cd0e7874b24"],
+							"ConstantVector1D_07_Value": [
+								{
+									"ref": "cafee6ad228745c6",
+									"value": {
+										"type": "float32",
+										"value": 0.0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe37907db78190",
+				{
+					"parent": "cafee19316149146",
+					"name": "lamp_modern_garage_a",
+					"factory": "[assembly:/_pro/environment/geometry/props/lamps/lamp_modern_garage_a.wl2?/lamp_modern_garage_a.prim].pc_entitytype",
+					"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": -0.05865899845957756,
+									"y": 0.0,
+									"z": 0.0
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5967bea1b78b",
+				{
+					"parent": "cafee19316149146",
+					"name": "Composite_LampAncor_Right_01",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": 0.01112200040370226,
+									"y": -1.3137309551239014,
+									"z": 0.009027999825775623
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe8d7f9057f67a",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0cd0e7874b24",
+				{
+					"parent": "cafee19316149146",
+					"name": "Light_Spot_Main_00",
+					"factory": "[modules:/zlightentity.class].pc_entitytype",
+					"blueprint": "[modules:/zlightentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -89.99982811265538
+								},
+								"position": {
+									"x": 0.04978099837899208,
+									"y": 0.06601999700069427,
+									"z": 0.5637819766998291
+								}
+							}
+						},
+						"m_eLightType": {
+							"type": "ILightEntity.ELightType",
+							"value": "LT_SQUARESPOT"
+						},
+						"m_vAreaQuadSize": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.07655630260705948,
+								"y": 3.9949100017547607
+							}
+						},
+						"m_fDiffusePower": {
+							"type": "float32",
+							"value": 100.0
+						},
+						"m_fAreaQuadViewFactorThreshold": {
+							"type": "float32",
+							"value": 0.03999999910593033
+						},
+						"m_bEnableLightFade": {
+							"type": "bool",
+							"value": true
+						},
+						"m_vBoxSize": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.27240899205207825,
+								"y": 4.0417799949646,
+								"z": 0.8135010004043579
+							}
+						},
+						"m_vBoxFadePos": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.025496799498796463,
+								"y": 0.10472399741411208,
+								"z": 0.0
+							}
+						},
+						"m_vBoxFadeNeg": {
+							"type": "SVector3",
+							"value": {
+								"x": 0.2395730018615723,
+								"y": 0.09292759746313096,
+								"z": 0.05844059959053993
+							}
+						},
+						"m_bCastShadows": {
+							"type": "bool",
+							"value": false
+						},
+						"m_vFarAttenuation": {
+							"type": "SVector2",
+							"value": { "x": 0.4000000059604645, "y": 6.0 }
+						},
+						"m_fCapsuleHeight": {
+							"type": "float32",
+							"value": 3.6842548847198486
+						},
+						"m_vNearAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.6299999952316284,
+								"y": 0.019999999552965164
+							}
+						},
+						"m_diffuseColor": {
+							"type": "SColorRGB",
+							"value": "#c9e0f5"
+						},
+						"m_fAspectXByY": {
+							"type": "float32",
+							"value": 0.20000000298023224
+						},
+						"m_vAngularAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.10000000149011612,
+								"y": 1.100000023841858
+							}
+						},
+						"m_fLightFadeDistance": {
+							"type": "float32",
+							"value": 10.0
+						},
+						"m_MasterLight": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe4a85cbb4323a"
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe37907db78190"
+						},
+						"m_fWrappedDiffuse": {
+							"type": "float32",
+							"value": 0.5
+						},
+						"m_bUseDynamicShadowMap": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bUseStaticShadowMap": {
+							"type": "bool",
+							"value": true
+						},
+						"m_fShadowFadeDistance": {
+							"type": "float32",
+							"value": 10.0
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7856080e697d",
+				{
+					"parent": "cafee19316149146",
+					"name": "Composite_LampAncor_Left_01",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": 0.0013150000013411045,
+									"y": 1.3543280363082886,
+									"z": 0.03074599988758564
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe8d7f9057f67a",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee6ad228745c6",
+				{
+					"parent": "cafee19316149146",
+					"name": "hokkaido_hospital_corridor_lights_a",
+					"factory": "[assembly:/_pro/environment/materials/levels/hokkaido/hokkaido_hospital_corridor_lights_a.mi].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/materials/levels/hokkaido/hokkaido_hospital_corridor_lights_a.mi].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": 0.0,
+									"y": -8.871838730328818e-8,
+									"z": -2.255163025211005e-7
+								}
+							}
+						},
+						"ConstantVector1D_07_Value_op": {
+							"type": "IRenderMaterialEntity.EModifierOperation",
+							"value": "eReplace"
+						},
+						"ConstantColorRGB_01_Value_op": {
+							"type": "IRenderMaterialEntity.EModifierOperation",
+							"value": "eReplace"
+						},
+						"Clients": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafe37907db78190",
+								"cafe8d7f9057f67a"
+							],
+							"postInit": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1878325086bd",
+				{
+					"parent": "cafee19316149146",
+					"name": "Chandelier_Chain_A02_01",
+					"factory": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": 0.09443899989128111,
+									"y": 1.3459089994430542,
+									"z": 1.4129940271377563
+								}
+							}
+						},
+						"m_bDetachOnLengthExceed": {
+							"type": "bool",
+							"value": false
+						},
+						"m_VertexColor": {
+							"type": "SColorRGB",
+							"value": "#2e2e2e"
+						},
+						"m_fWireWidth": {
+							"type": "float32",
+							"value": 0.009999999776482582
+						},
+						"m_Material": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/environment/materials/props/wires/cable_grey.mi].pc_mi",
+								"flag": "5F"
+							}
+						},
+						"m_fWireMaterialLength": {
+							"type": "float32",
+							"value": 0.05000000074505806
+						},
+						"AttachPoint": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7856080e697d"
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe401e96cc1326",
+				{
+					"parent": "cafee19316149146",
+					"name": "FX_Logic_LampCore",
+					"factory": "[assembly:/_pro/effects/templates/logic/fx_logic_lampcore.template?/fx_logic_lampcore.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/effects/templates/logic/fx_logic_lampcore.template?/fx_logic_lampcore.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"DiffusePower": {
+							"type": "float32",
+							"value": 100.0
+						},
+						"GlowPower": { "type": "float32", "value": 100.0 },
+						"DiffuseColor": {
+							"type": "SColorRGB",
+							"value": "#e8f5ff"
+						},
+						"On": { "type": "bool", "value": true }
+					},
+					"events": {
+						"GeomShadowToggle": {
+							"CastShadows": [
+								"cafe37907db78190",
+								"cafe8d7f9057f67a"
+							]
+						},
+						"DiffuseColor": {
+							"ConstantColorRGB_01_Value": [
+								"cafee6ad228745c6"
+							],
+							"DiffuseColor": ["cafe0cd0e7874b24"]
+						},
+						"GlowPower": {
+							"ConstantVector1D_07_Value": [
+								"cafee6ad228745c6"
+							]
+						},
+						"DiffusePower": {
+							"DiffusePower": ["cafe0cd0e7874b24"]
+						},
+						"On": { "SetVisible": ["cafe0cd0e7874b24"] },
+						"OnHit": {
+							"ConstantVector1D_07_Value": [
+								{
+									"ref": "cafee6ad228745c6",
+									"value": {
+										"type": "float32",
+										"value": 0.0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee19316149146",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "lamp_Modern_Garage_Double_A_00",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": 5.631893157958984,
+									"y": -7.241000175476074,
+									"z": 3.5889999866485596
+								}
+							}
+						},
+						"m_bVisible": { "type": "bool", "value": true },
+						"On": { "type": "bool", "value": true },
+						"GlowPower": { "type": "float32", "value": 100.0 },
+						"DiffuseColor": {
+							"type": "SColorRGB",
+							"value": "#e8f5ff"
+						},
+						"m_fAspectXByY": {
+							"type": "float32",
+							"value": 0.20000000298023224
+						},
+						"m_vAngularAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.10000000149011612,
+								"y": 1.100000023841858
+							}
+						},
+						"m_fWrappedDiffuse": {
+							"type": "float32",
+							"value": 0.5
+						},
+						"m_bUseDynamicShadowMap": {
+							"type": "bool",
+							"value": false
+						}
+					},
+					"inputCopying": {
+						"TurnOn": { "TurnOn": ["cafe401e96cc1326"] },
+						"TurnOff": { "TurnOff": ["cafe401e96cc1326"] }
+					},
+					"propertyAliases": {
+						"DiffuseColor": [
+							{
+								"originalProperty": "DiffuseColor",
+								"originalEntity": "cafe401e96cc1326"
+							}
+						],
+						"DiffusePower": [
+							{
+								"originalProperty": "DiffusePower",
+								"originalEntity": "cafe401e96cc1326"
+							}
+						],
+						"GlowPower": [
+							{
+								"originalProperty": "GlowPower",
+								"originalEntity": "cafe401e96cc1326"
+							}
+						],
+						"LampWiresTransform": [
+							{
+								"originalProperty": "m_mTransform",
+								"originalEntity": "cafe37907db78190"
+							}
+						],
+						"On": [
+							{
+								"originalProperty": "On",
+								"originalEntity": "cafe401e96cc1326"
+							}
+						],
+						"PositionRotationSpot": [
+							{
+								"originalProperty": "m_mTransform",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_MasterLight": [
+							{
+								"originalProperty": "m_MasterLight",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_bCastShadows": [
+							{
+								"originalProperty": "m_bCastShadows",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_bUseDynamicShadowMap": [
+							{
+								"originalProperty": "m_bUseDynamicShadowMap",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_bUseStaticShadowMap": [
+							{
+								"originalProperty": "m_bUseStaticShadowMap",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_fAspectXByY": [
+							{
+								"originalProperty": "m_fAspectXByY",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_fLightFadeDistance": [
+							{
+								"originalProperty": "m_fLightFadeDistance",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_fShadowFadeDistance": [
+							{
+								"originalProperty": "m_fShadowFadeDistance",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_fWrappedDiffuse": [
+							{
+								"originalProperty": "m_fWrappedDiffuse",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_vAngularAttenuation": [
+							{
+								"originalProperty": "m_vAngularAttenuation",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_vFarAttenuation": [
+							{
+								"originalProperty": "m_vFarAttenuation",
+								"originalEntity": "cafe0cd0e7874b24"
+							}
+						],
+						"m_vFarAttenuationCapsule": [
+							{
+								"originalProperty": "m_vFarAttenuation",
+								"originalEntity": "cafe4a85cbb4323a"
+							}
+						]
+					},
+					"exposedEntities": {
+						"Light_Spot_Main_00": {
+							"isArray": false,
+							"refersTo": ["cafe0cd0e7874b24"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7f7338411a2e",
+				{
+					"parent": "cafee19316149146",
+					"name": "Chandelier_Chain_A03_01",
+					"factory": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": 0.0944409966468811,
+									"y": -1.3162200450897217,
+									"z": 1.4130849838256836
+								}
+							}
+						},
+						"m_bDetachOnLengthExceed": {
+							"type": "bool",
+							"value": false
+						},
+						"m_VertexColor": {
+							"type": "SColorRGB",
+							"value": "#2e2e2e"
+						},
+						"m_fWireWidth": {
+							"type": "float32",
+							"value": 0.009999999776482582
+						},
+						"m_Material": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/environment/materials/props/wires/cable_grey.mi].pc_mi",
+								"flag": "5F"
+							}
+						},
+						"m_fWireMaterialLength": {
+							"type": "float32",
+							"value": 0.05000000074505806
+						},
+						"AttachPoint": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5967bea1b78b"
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7947d3bd22d4",
+				{
+					"parent": "cafee19316149146",
+					"name": "Composite_LampAncor_Left",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": -0.01727600023150444,
+									"y": 1.3543280363082886,
+									"z": 0.03074599988758564
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe37907db78190"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe443df5a49d76",
+				{
+					"parent": "cafee19316149146",
+					"name": "Composite_LampAncor_Right",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": -0.007468999829143286,
+									"y": -1.3137309551239014,
+									"z": 0.009027999825775623
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe37907db78190"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafefda9a9a75650",
+				{
+					"parent": "cafee19316149146",
+					"name": "Chandelier_Chain_A03",
+					"factory": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": -0.06882999837398529,
+									"y": -1.3162200450897217,
+									"z": 1.4130849838256836
+								}
+							}
+						},
+						"m_bDetachOnLengthExceed": {
+							"type": "bool",
+							"value": false
+						},
+						"m_VertexColor": {
+							"type": "SColorRGB",
+							"value": "#2e2e2e"
+						},
+						"m_fWireWidth": {
+							"type": "float32",
+							"value": 0.009999999776482582
+						},
+						"m_Material": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/environment/materials/props/wires/cable_grey.mi].pc_mi",
+								"flag": "5F"
+							}
+						},
+						"m_fWireMaterialLength": {
+							"type": "float32",
+							"value": 0.05000000074505806
+						},
+						"AttachPoint": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe443df5a49d76"
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8d7f9057f67a",
+				{
+					"parent": "cafee19316149146",
+					"name": "lamp_modern_garage_a_01",
+					"factory": "[assembly:/_pro/environment/geometry/props/lamps/lamp_modern_garage_a.wl2?/lamp_modern_garage_a.prim].pc_entitytype",
+					"blueprint": "[assembly:/templates/geometrytemplatestaticcoll.template?/geomentity01.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": 0.14468100666999817,
+									"y": 0.0,
+									"z": 0.0
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe37907db78190"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe06eb70258deb",
+				{
+					"parent": "cafee19316149146",
+					"name": "Chandelier_Chain_A02",
+					"factory": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/templates/props/wires/chandelier_chains.template?/chandelier_chain_a.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 89.99971352110967
+								},
+								"position": {
+									"x": -0.06883399933576584,
+									"y": 1.3459089994430542,
+									"z": 1.4129940271377563
+								}
+							}
+						},
+						"m_bDetachOnLengthExceed": {
+							"type": "bool",
+							"value": false
+						},
+						"m_VertexColor": {
+							"type": "SColorRGB",
+							"value": "#2e2e2e"
+						},
+						"m_fWireWidth": {
+							"type": "float32",
+							"value": 0.009999999776482582
+						},
+						"m_Material": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/environment/materials/props/wires/cable_grey.mi].pc_mi",
+								"flag": "5F"
+							}
+						},
+						"m_fWireMaterialLength": {
+							"type": "float32",
+							"value": 0.05000000074505806
+						},
+						"AttachPoint": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7947d3bd22d4"
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee19316149146"
+						}
+					}
+				}
+			]
+		},
+		{
 			"AddComment": {
 				"parent": "cafecf615dee28e3",
 				"name": "Notes",
