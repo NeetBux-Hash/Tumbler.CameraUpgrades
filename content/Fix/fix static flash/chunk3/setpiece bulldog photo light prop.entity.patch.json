@@ -8,6 +8,13 @@
 				"name": "Notes",
 				"text": "Save this and remember \"Flash\" in main scene brick"
 			}
+		},
+		{
+			"AddComment": {
+				"parent": "13300a1f97c74d11",
+				"name": "Notes",
+				"text": "Isolate this and its runtimes"
+			}
 		}
 	],
 	"patchVersion": 6

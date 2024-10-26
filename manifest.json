@@ -43,7 +43,20 @@
 			"tooltip": "Stops the flash fading away completely so you can see pictures in the dark better (example; club in Berlin)",
 			"type": "checkbox",
 			
-			"contentFolders": ["content/Fix/fix static flash"]
+			"contentFolders": ["content/Fix/fix static flash"],
+			"dependencies": [
+				"00F65554F64072C1",
+				{
+					"runtimeID": "00B22C98ED7DD0F7",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+					{
+					"runtimeID": "001F9A8576A2DA80",
+					"portFromChunk1": true,
+					"toChunk": 0
+				}
+			]
 		},
 		{
 			"name": "Functions - Instinct in Normal Camera",
