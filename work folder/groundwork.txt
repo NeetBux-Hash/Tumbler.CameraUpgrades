@@ -7,25 +7,7 @@
 
 - Fix 2x on 10x skipping 2x at zoom in; Feed gpt full json and ask for m_fstep analyze
 
-- Fix flash on static pictures?
-0072BC2B790950B2.TEMP
-[assembly:/_pro/effects/templates/postfilters/fx_pf_postfiltercontroller.template?/fx_pf_postfiltercontroller.entitytemplate].pc_entitytype
-00102EA3A46F6E24.TEMP
-[assembly:/_pro/design/items/prop_gadgets_runtimes.template?/prop_gadget_camera_runtime.entitytemplate].pc_entitytemplate
-0040AAE0C098FD41.TEMP
-camera_intel_object
-00DBD52219AE2726.TEMP
-camera_scan_intel_object
-001B1430D1673821.TEMP
-[assembly:/_pro/design/gamecore/setpiecehelpers_s3.template?/photohelper_actorvisibleonphoto.entitytemplate].pc_entitytype
-009C268301A2A812.TEMP
-[assembly:/_pro/design/items/prop_evergreen_runtimes.template?/prop_gadget_evergreen_spycam_runtime.entitytemplate].pc_entitytemplate
-
-Results for blendweight;
-000385625DEFB097.CPPT
-[modules:/zrenderpostfilterparametersentity.class].pc_entitytype
-
-Permanent light source factory?; [modules:/zlightsaveaspect.class].entitytype).pc_entitytype
+- Find the empty and broken camera button in one of the options
 
 - Refine distance tagging from distance by highlighting actors in crosshairs. TOO ADVANCED for me atm
 
@@ -44,6 +26,7 @@ One way tagging might be better and help with the broken raycasting tagging mult
 ----------------Functions----------
 
 A flash that can be toggled on/off any time
+Button or toggle logic. Needs additional logic when exiting camera mode
 
 
 --------Inputs--------------
@@ -154,7 +137,7 @@ Lets use Shift or spacebar since cant change in static mode and convert from men
 
 
 - Similiarly The selfie cam should get the cancel input which is likely spacebar
-Used f for now but isnt doing anything and empty sweetline as expected
+Used f for now but isnt doing anything and empty sweetline as expected (!!!!!!!!!!!)
 
 -Raycasting in selfie mode.
 adding rays event lines worked but need to look opposite way. Also see if ray works straight when selfie enabled.
