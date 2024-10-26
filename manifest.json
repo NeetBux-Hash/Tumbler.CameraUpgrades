@@ -42,7 +42,7 @@
 			"name": "Fix - Proper flash in picture mode",
 			"tooltip": "Stops the flash fading away completely so you can see pictures in the dark better (example; club in Berlin)",
 			"type": "checkbox",
-			
+			"image": "content/pics/staticflash.gif",
 			"contentFolders": ["content/Fix/fix static flash"]
 			
 		},
