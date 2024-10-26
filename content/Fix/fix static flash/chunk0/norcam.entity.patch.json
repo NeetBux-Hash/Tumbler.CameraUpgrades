@@ -31,7 +31,7 @@
 									"y": 0.0,
 									"z": 0
 								},
-								"position": { "x": 0, "y": 0, "z": 0.3 }
+								"position": { "x": 0, "y": 0, "z": -0.5 }
 							}
 						},
 						"m_vAngularAttenuation": {
