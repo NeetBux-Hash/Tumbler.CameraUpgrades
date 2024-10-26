@@ -43,20 +43,7 @@
 			"tooltip": "Stops the flash fading away completely so you can see pictures in the dark better (example; club in Berlin)",
 			"type": "checkbox",
 			
-			"contentFolders": ["content/Fix/fix static flash"],
-			"dependencies": [
-				"00E53808E2834AD8",
-				{
-					"runtimeID": "00B22C98ED7DD0F7",
-					"portFromChunk1": true,
-					"toChunk": 0
-				},
-				{
-					"runtimeID": "001F9A8576A2DA80",
-					"portFromChunk1": true,
-					"toChunk": 0	
-				}
-			]
+			"contentFolders": ["content/Fix/fix static flash"]
 			
 		},
 		{
