@@ -3,6 +3,18 @@
 	"tbluHash": "000977D5F9070B8D",
 	"patch": [
 		{
+			"SubEntityOperation": [
+				"5ab7b5e560fab3fd",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"MakeVisible",
+						"cafe6f61790b72e3"
+					]
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafe6f61790b72e3",
 				{
@@ -19,7 +31,7 @@
 									"y": 0.0,
 									"z": 0
 								},
-								"position": { "x": 0, "y": 0, "z": 0 }
+								"position": { "x": 0, "y": 0, "z": 0.3 }
 							}
 						},
 						"m_vAngularAttenuation": {
@@ -50,7 +62,8 @@
 							"type": "SEntityTemplateReference",
 							"value": "95975e99b90f4059",
 							"postInit": true
-						}
+						},
+						"m_bVisible": { "type": "bool", "value": false }
 					}
 				}
 			]
