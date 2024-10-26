@@ -45,7 +45,7 @@
 			
 			"contentFolders": ["content/Fix/fix static flash"],
 			"dependencies": [
-				"00F65554F64072C1",
+				"00E53808E2834AD8",
 				{
 					"runtimeID": "00B22C98ED7DD0F7",
 					"portFromChunk1": true,
