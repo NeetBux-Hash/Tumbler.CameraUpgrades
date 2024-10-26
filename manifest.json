@@ -43,7 +43,84 @@
 			"tooltip": "Stops the flash fading away completely so you can see pictures in the dark better (example; club in Berlin)",
 			"type": "checkbox",
 			
-			"contentFolders": ["content/Fix/fix static flash"]
+			"contentFolders": ["content/Fix/fix static flash"],
+			"dependencies": [ 
+				"00F65554F64072C1",
+				{
+					"runtimeID": "00497996E879A749",
+					"portFromChunk1": true,
+					"toChunk": 0
+					
+				},
+				{
+					"runtimeID": "00DD6458D9D5D27B",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00A50368EF35C60F",
+					"portFromChunk1": true,
+					"toChunk": 0
+
+				},
+				{
+					"runtimeID": "00E53808E2834AD8",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00B22C98ED7DD0F7",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "001F9A8576A2DA80",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00E3B31E8C5E381C",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00D03FFD89DF5140",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "0080B417B6DD1FA9",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "0096504CB0B9C3B6",
+					"portFromChunk1": true,
+					"toChunk": 0
+
+				},
+				{
+					"runtimeID": "006022A48806E428",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00E5FC2896AA8A11",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00DC5696605F531C",
+					"portFromChunk1": true,
+					"toChunk": 0
+				},
+				{
+					"runtimeID": "00497996E879A749",
+					"portFromChunk1": true,
+					"toChunk": 0
+				}
+
+			]
 		},
 		{
 			"name": "Functions - Instinct in Normal Camera",

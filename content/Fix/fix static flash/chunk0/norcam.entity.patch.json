@@ -383,7 +383,7 @@
 			"AddEntity": [
 				"cafe1b65ac47dd19",
 				{
-					"parent": "ca1bf3d9a532f5b1",
+					"parent": "cafeee5fa4e198d8",
 					"name": "Movie_Set_Lamp_Broken_A02",
 					"factory": "[assembly:/_pro/environment/templates/props/lamps/movieset_lamps_a.template?/movie_set_lamp_broken_a.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/environment/templates/props/lamps/movieset_lamps_a.template?/movie_set_lamp_broken_a.entitytemplate].pc_entityblueprint",
@@ -522,7 +522,7 @@
 				"cafec143694b41dd",
 				{
 					"parent": "ca1bf3d9a532f5b1",
-					"name": "IsOn",
+					"name": "SetPiecie_IsOn",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -541,6 +541,43 @@
 							"MakeVisible": ["cafe1b65ac47dd19"]
 						},
 						"OnFalse": { "TurnOff": ["cafe1b65ac47dd19"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeee5fa4e198d8",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Setpiece_Bulldog_PhotoLight",
+					"factory": "[modules:/zspatialentity.class].pc_entitytype",
+					"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": 5.944479942321777,
+									"y": 1.1077090501785278,
+									"z": 1.9999999949504854e-6
+								}
+							}
+						}
+					},
+					"propertyAliases": {
+						"HasPower": [
+							{
+								"originalProperty": "m_aValues",
+								"originalEntity": "cafec143694b41dd"
+							}
+						],
+						"Light_Flash_Sound": []
 					}
 				}
 			]
