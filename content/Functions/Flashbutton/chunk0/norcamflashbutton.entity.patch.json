@@ -33,6 +33,18 @@
 			]
 		},
 		{
+			"SubEntityOperation": [
+				"0e0774def16f82b2",
+				{
+					"AddEventConnection": [
+						"Out",
+						"MakeInvisible",
+						"cafe6f61790b72e3"
+					]
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafe6f61790b72e3",
 				{

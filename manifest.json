@@ -47,9 +47,9 @@
 		},
 		{
 			"name": "Functions - Flash button",
-			"tooltip": "Makes the flash option toggleable for permanent lightning when moving around",
+			"tooltip": "Adds a flash button that can be turned on/off anytime",
 			"type": "checkbox",
-	
+			"image": "content/pics/flashbuttonwater.gif",
 			"contentFolders": ["content/Functions/Flashbutton"],
 			"localisation": {
 				"english": {
