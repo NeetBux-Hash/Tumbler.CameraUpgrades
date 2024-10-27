@@ -1,0 +1,186 @@
+{
+	"tempHash": "00102EA3A46F6E24",
+	"tbluHash": "000977D5F9070B8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"e8ad90277a2c3268",
+				{
+					"AddEventConnection": ["Triggered", "SetTrue", "cafedf2e00ee3789"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a7484674383510cb",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aActions",
+						[
+							{
+								"AddItemAfter": ["e8ad90277a2c3268", "cafe82aac4df09dc"]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"0e0774def16f82b2",
+				{
+					"AddEventConnection": ["Out", "MakeInvisible", "cafe6f61790b72e3"]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6f61790b72e3",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "lamp_Modern_Garage_Double_A_00",
+					"factory": "[assembly:/_pro/environment/templates/props/lamps/lamps_indoor_a.template?/lamp_modern_garage_double_a_00.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/environment/templates/props/lamps/lamps_indoor_a.template?/lamp_modern_garage_double_a_00.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": 0
+								},
+								"position": { "x": 0, "y": 0, "z": 2.5 }
+							}
+						},
+						"m_vAngularAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.1599999964237213,
+								"y": 1.159999966621399
+							}
+						},
+						"GlowPower": { "type": "float32", "value": 200.0 },
+						"m_vFarAttenuation": {
+							"type": "SVector2",
+							"value": {
+								"x": 1.9700000286102295,
+								"y": 8.34000015258789
+							}
+						},
+						"DiffusePower": {
+							"type": "float32",
+							"value": 60.0
+						},
+						"DiffuseColor": {
+							"type": "SColorRGB",
+							"value": "#d7e9f7"
+						},
+						"On": { "type": "bool", "value": true },
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "95975e99b90f4059",
+							"postInit": true
+						},
+						"m_bVisible": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe82aac4df09dc",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Prompt_Toggle Flash",
+					"factory": "[modules:/zphotomodemenuactionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuactionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eInputFlag": {
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputActionPickup"
+						},
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "0047DE46D20AC3B5",
+								"flag": "5F"
+							}
+						},
+						"m_bIsVisible": { "type": "bool", "value": true }
+					},
+					"events": {
+						"Triggered": { "Toggle": ["cafedf2e00ee3789"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafedf2e00ee3789",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "VisibleFLashLights",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					},
+					"events": {
+						"OnTrue": {
+							"Send_Hide_UI": ["3c989af2b1189701"],
+							"MakeVisible": ["cafe6f61790b72e3"]
+						},
+						"OnFalse": {
+							"Send_Hide_UI": ["3c989af2b1189701"],
+							"MakeInvisible": ["cafe6f61790b72e3"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "cafecf615dee28e3",
+				"name": "Notes",
+				"text": "super (chunk0)"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe1b65ac47dd19",
+				"name": "Notes",
+				"text": "POrt this in manifest from chunk1 "
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe5f4e1896f9a5",
+				"name": "Notes",
+				"text": "super (chunk0)"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafec4c26bcb7bc5",
+				"name": "Notes",
+				"text": "super (chunk0)"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafebe857b2603c1",
+				"name": "Notes",
+				"text": "base (chunk1)"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe723c0e9e97ad",
+				"name": "Notes",
+				"text": "base (chunk1)"
+			}
+		}
+	],
+	"patchVersion": 6
+}
