@@ -16,7 +16,42 @@
 		},
 		{
 			"AddEntity": [
-				"cafe248c77cdde68",
+				"cafe8200a2d91da4",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Enable Visibility",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"d2201b3589ed2f37",
+								"1ca1ec24a2f98757"
+							],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnValue": { "SetVisible": ["93c7f42ace04362f"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7fd31a649d20",
+				{
+					"parent": "4c0d94fe0d38c473",
+					"name": "Enable DOF",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe339ed8fe70c7",
 				{
 					"parent": "5f8da0a7330faef0",
 					"name": "Enable DOF Static",
