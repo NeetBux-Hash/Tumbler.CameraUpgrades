@@ -3,6 +3,18 @@
 	"tbluHash": "000977D5F9070B8D",
 	"patch": [
 		{
+			"SubEntityOperation": [
+				"5f8da0a7330faef0",
+				{
+					"RemoveEventConnection": [
+						"OnValue",
+						"SetEnabled",
+						"4517e57dd0d01730"
+					]
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafe248c77cdde68",
 				{
@@ -13,7 +25,12 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["5ab7b5e560fab3fd"]
+							"value": [
+								"d2201b3589ed2f37",
+								"f7f8fd39a9e8e6e8",
+								"2b0fb0864e1f3f8d",
+								"5ab7b5e560fab3fd"
+							]
 						},
 						"m_bFireOnLevelStart": {
 							"type": "bool",
