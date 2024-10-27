@@ -130,7 +130,7 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			
-			"contentFolders": ["content/Editing/FreezeDOF"]
+			"contentFolders": ["content2/FreezeDOF"]
 		},
 		{
 			"name": "Editing - Remove normal camera filters",
