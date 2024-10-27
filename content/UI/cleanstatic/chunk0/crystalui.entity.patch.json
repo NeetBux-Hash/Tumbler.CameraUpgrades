@@ -21,7 +21,12 @@
 						}
 					},
 					"events": {
-						"OnValue": { "SetVisible": ["93c7f42ace04362f"] }
+						"OnValue": {
+							"SetVisible": [
+								"93c7f42ace04362f",
+								"4517e57dd0d01730"
+							]
+						}
 					}
 				}
 			]
