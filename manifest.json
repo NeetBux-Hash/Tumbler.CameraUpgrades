@@ -171,6 +171,31 @@
 			"contentFolders": ["content/UI/cleanstatic"]
 		},
 		{
+			"name": "Bonus - Flash Colors",
+			"tooltip": "Adds a list options for flash colors",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"localisation": {
+				"english": {
+					"UI_FLASH_COLORS": "Flash colors",
+					"UI_FLASH_GREEN": "Green",
+					"UI_FLASH_BLUE": "Blue",
+					"UI_FLASH_RED": "Red",
+					"UI_FLASH_YELLOW": "Yellow"
+				}
+			},
+			"localisedLines": {
+				"00E23995907574F4": "UI_FLASH_COLORS",
+				"0036AA40D779BCF5": "UI_FLASH_GREEN",
+				"00FBD22A145065CE": "UI_FLASH_BLUE",
+				"00411293391E0278": "UI_FLASH_RED",
+				"0038AF91167813D1": "UI_FLASH_YELLOW"
+			},
+		
+			"contentFolders": ["content/Bonus/flashcolors"]
+		},
+
+		{
 			"name": "About Input options",
 			"type": "checkbox",
 			"tooltip": "Pick the same Input type from each group to prevent double inputs for the same functions. It's recommended but not necessary to enable both groups. Checking this box does nothing but confirm you've fully read what's been written here "

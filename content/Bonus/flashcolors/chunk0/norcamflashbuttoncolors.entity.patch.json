@@ -6,7 +6,11 @@
 			"SubEntityOperation": [
 				"e8ad90277a2c3268",
 				{
-					"AddEventConnection": ["Triggered", "SetTrue", "cafedf2e00ee3789"]
+					"AddEventConnection": [
+						"Triggered",
+						"SetTrue",
+						"cafedf2e00ee3789"
+					]
 				}
 			]
 		},
@@ -15,10 +19,13 @@
 				"a7484674383510cb",
 				{
 					"PatchArrayPropertyValue": [
-						"m_aActions",
+						"m_aMenuEntries",
 						[
 							{
-								"AddItemAfter": ["e8ad90277a2c3268", "cafe82aac4df09dc"]
+								"AddItemAfter": [
+									"e80f2e6a4bbbae40",
+									"cafe1f749ed4d45c"
+								]
 							}
 						]
 					]
@@ -29,7 +36,11 @@
 			"SubEntityOperation": [
 				"0e0774def16f82b2",
 				{
-					"AddEventConnection": ["Out", "MakeInvisible", "cafe6f61790b72e3"]
+					"AddEventConnection": [
+						"Out",
+						"MakeInvisible",
+						"cafe6f61790b72e3"
+					]
 				}
 			]
 		},
@@ -89,34 +100,6 @@
 		},
 		{
 			"AddEntity": [
-				"cafe82aac4df09dc",
-				{
-					"parent": "ca1bf3d9a532f5b1",
-					"name": "Prompt_Toggle Flash",
-					"factory": "[modules:/zphotomodemenuactionentity.class].pc_entitytype",
-					"blueprint": "[modules:/zphotomodemenuactionentity.class].pc_entityblueprint",
-					"properties": {
-						"m_eInputFlag": {
-							"type": "EHM5GameInputFlag",
-							"value": "eGameInputActionPickup"
-						},
-						"m_sSweetLabel": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "0047DE46D20AC3B5",
-								"flag": "5F"
-							}
-						},
-						"m_bIsVisible": { "type": "bool", "value": true }
-					},
-					"events": {
-						"Triggered": { "Toggle": ["cafedf2e00ee3789"] }
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
 				"cafedf2e00ee3789",
 				{
 					"parent": "ca1bf3d9a532f5b1",
@@ -134,6 +117,181 @@
 						"OnFalse": {
 							"Send_Hide_UI": ["3c989af2b1189701"],
 							"MakeInvisible": ["cafe6f61790b72e3"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed1607578fec0",
+				{
+					"parent": "cafe6f61790b72e3",
+					"name": "Valuebool set color",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValueEntities": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": []
+						},
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": null
+						}
+					},
+					"events": {},
+					"outputCopying": {},
+					"exposedEntities": {}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1f749ed4d45c",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Filter List Flash Color",
+					"factory": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentrylistaspect.class].entitytype).pc_entitytype",
+					"blueprint": "[assembly:/templates/aspectdummy.aspect]([modules:/zphotomodemenuentryentity.class].entitytype,[modules:/zphotomodemenuentrylistaspect.class].entitytype).pc_entityblueprint",
+					"properties": {
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00E23995907574F4",
+								"flag": "5F"
+							}
+						},
+						"m_bIsVisible": { "type": "bool", "value": true },
+						"m_aListOptions": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafeb3f2b369565b",
+								"cafe8f08558beb40",
+								"cafe3b481052a4ff",
+								"cafe89c0b0253ab8",
+								"cafeababd4ae8ca0"
+							],
+							"postInit": true
+						}
+					},
+					"platformSpecificProperties": {
+						"VR_PC": {
+							"m_bIsVisible": {
+								"type": "bool",
+								"value": false
+							}
+						}
+					},
+					"events": {
+						"SelectionChanged": {
+							"Send_Switch_Filter": ["3c989af2b1189701"],
+							"SetValue": ["86905689e8974495"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb3f2b369565b",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "FilterOption Flash_0",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 0 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "004BB96048F6DD61",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8f08558beb40",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "FilterOption Flash_1",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 1 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "0036AA40D779BCF5",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3b481052a4ff",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "FilterOption Flash_2",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 2 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00FBD22A145065CE",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe89c0b0253ab8",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "FilterOption Flash_3",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 3 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00411293391E0278",
+								"flag": "5F"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeababd4ae8ca0",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "FilterOption Flash_4",
+					"factory": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zphotomodemenuentrylistoptionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_nID": { "type": "int32", "value": 4 },
+						"m_sSweetLabel": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "0038AF91167813D1",
+								"flag": "5F"
+							}
 						}
 					}
 				}
@@ -179,6 +337,41 @@
 				"parent": "cafe723c0e9e97ad",
 				"name": "Notes",
 				"text": "base (chunk1)"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe8f08558beb40",
+				"name": "Notes",
+				"text": "Green"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe3b481052a4ff",
+				"name": "Notes",
+				"text": "Blue"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe89c0b0253ab8",
+				"name": "Notes",
+				"text": "Red"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafeababd4ae8ca0",
+				"name": "Notes",
+				"text": "yellow"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafeb3f2b369565b",
+				"name": "Notes",
+				"text": "no change"
 			}
 		}
 	],
