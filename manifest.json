@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"id": "Tumbler.CameraUpgrades",
 	"name": "Camera Upgrades",
 	"description": "An overhaul to both cameras by changing and deleting some properties. Default enabled options are recommended.",
@@ -59,7 +59,6 @@
 			"localisedLines": {
 				"0047DE46D20AC3B5": "UI_FLASH_BUTTON"
 			}
-			
 		},
 		{
 			"name": "Functions - Instinct in Normal Camera",

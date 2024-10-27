@@ -6,11 +6,7 @@
 			"SubEntityOperation": [
 				"e8ad90277a2c3268",
 				{
-					"AddEventConnection": [
-						"Triggered",
-						"SetTrue",
-						"cafedf2e00ee3789"
-					]
+					"AddEventConnection": ["Triggered", "SetTrue", "cafedf2e00ee3789"]
 				}
 			]
 		},
@@ -22,10 +18,7 @@
 						"m_aActions",
 						[
 							{
-								"AddItemAfter": [
-									"e8ad90277a2c3268",
-									"cafe82aac4df09dc"
-								]
+								"AddItemAfter": ["e8ad90277a2c3268", "cafe82aac4df09dc"]
 							}
 						]
 					]
@@ -36,11 +29,7 @@
 			"SubEntityOperation": [
 				"0e0774def16f82b2",
 				{
-					"AddEventConnection": [
-						"Out",
-						"MakeInvisible",
-						"cafe6f61790b72e3"
-					]
+					"AddEventConnection": ["Out", "MakeInvisible", "cafe6f61790b72e3"]
 				}
 			]
 		},
