@@ -126,23 +126,20 @@
 			"AddEntity": [
 				"cafed1607578fec0",
 				{
-					"parent": "cafe6f61790b72e3",
-					"name": "Valuebool set color",
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "Filter Flash Valuebool set color 1",
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_set.entitytemplate].pc_entityblueprint",
 					"properties": {
 						"m_aValueEntities": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": []
+							"value": ["cafe8f08558beb40"]
 						},
 						"m_rValueEntity": {
 							"type": "SEntityTemplateReference",
-							"value": null
+							"value": "cafe6f61790b72e3"
 						}
-					},
-					"events": {},
-					"outputCopying": {},
-					"exposedEntities": {}
+					}
 				}
 			]
 		},

@@ -23,6 +23,7 @@ One way tagging might be better and help with the broken raycasting tagging mult
 
 - Add ability to fully look up and down
 
+- Find why melee is possible in photomode
 ----------------Functions----------
 
 A flash that can be toggled on/off any time
