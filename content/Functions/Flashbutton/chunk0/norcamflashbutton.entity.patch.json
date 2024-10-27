@@ -4,6 +4,18 @@
 	"patch": [
 		{
 			"SubEntityOperation": [
+				"e8ad90277a2c3268",
+				{
+					"AddEventConnection": [
+						"Triggered",
+						"SetTrue",
+						"cafedf2e00ee3789"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
 				"a7484674383510cb",
 				{
 					"PatchArrayPropertyValue": [
@@ -16,30 +28,6 @@
 								]
 							}
 						]
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"5ab7b5e560fab3fd",
-				{
-					"AddEventConnection": [
-						"OnFalse",
-						"MakeInvisible",
-						"cafe6f61790b72e3"
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"5ab7b5e560fab3fd",
-				{
-					"AddEventConnection": [
-						"OnTrue",
-						"MakeVisible",
-						"cafe6f61790b72e3"
 					]
 				}
 			]
@@ -119,6 +107,33 @@
 							}
 						},
 						"m_bIsVisible": { "type": "bool", "value": true }
+					},
+					"events": {
+						"Triggered": { "Toggle": ["cafedf2e00ee3789"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafedf2e00ee3789",
+				{
+					"parent": "ca1bf3d9a532f5b1",
+					"name": "VisibleFLashLights",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					},
+					"events": {
+						"OnTrue": {
+							"Send_Hide_UI": ["3c989af2b1189701"],
+							"MakeVisible": ["cafe6f61790b72e3"]
+						},
+						"OnFalse": {
+							"Send_Hide_UI": ["3c989af2b1189701"],
+							"MakeInvisible": ["cafe6f61790b72e3"]
+						}
 					}
 				}
 			]
