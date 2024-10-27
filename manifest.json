@@ -125,6 +125,14 @@
 			"contentFolders": ["content/Editing/spyfuzzy"]
 		},
 		{
+			"name": "Editing - Freeze DOF editing",
+			"tooltip": "Lets you change DOF options in static picture mode",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			
+			"contentFolders": ["content/Editing/FreezeDOF"]
+		},
+		{
 			"name": "Editing - Remove normal camera filters",
 			"tooltip": "Removes the filter options from the normal camera",
 			"type": "checkbox",
